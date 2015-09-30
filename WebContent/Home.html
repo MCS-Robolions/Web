@@ -1512,7 +1512,7 @@ body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relati
 	
 	</respond-search> 
 
-<header role="banner">
+<header role="banner" style="width: 100%; position:fixed; top:0px;">
 
 	<nav class="navbar navbar-default" role="navigation">
 
@@ -1530,6 +1530,7 @@ body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relati
         <ul class="nav navbar-nav navbar-right">
         <li class="active "><a href="Home.html">Home</a></li>
         <li><a href="Blog.html">Blog</a></li>
+        <li><a href="Resources.html">Resources</a></li>
         <li><a href="About.html">About</a></li>
         <li><a href="Contact.html">Contact</a></li>
         </ul>
@@ -1540,69 +1541,381 @@ body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relati
 
 </header>
 
-<div id="content" class="container" role="main">
+<div id="content" class="container" role="main" style="margin-top: 120px;">
+
 	<div id="block-3" class="block row jumbotron" data-nested="not-nested" data-containerid="" data-containercssclass="">
     <div class="col col-md-6">
-        <h1 id="h1-2">Robo Lions!</h1>
-        <p id="p-1">MCHS Robotics Team</p>
-        <p id="p-2" class="call-to-action"><a href="#">Sign up Now</a>
-        </p>
+    	<table>
+    		<tr>
+    			<td rowspan=2><img src="./Home_files/robolionslogo.jpg" height="127" width="164" style="margin-left: 50px;"></td>
+    			<td><h1 id="h1-2">RoboLions!</h1></td>
+    		</tr>
+    		<tr>
+    			<td><p id="p-1">MCHS Robotics Team</p></td>
+    		</tr>
+    		<tr>
+    			<td colspan=2 style="text-align: center;"><p id="p-2" class="call-to-action"><a href="Contact.html">Become a Sponsor Now</a></p></td>
+    		</tr>
+    	</table>
     </div>
+
+
     <div class="col col-md-6">
+    
         <respond-slideshow slideshowid="slideshow-1" indicators="true" arrows="true" interval="5000" wrap="true" pauseonhover="true" transition="slide" position="default">
 		
 			<div data-ride="carousel" class="carousel slide style-scope respond-slideshow" data-interval="5000" data-wrap="true" id="carousel-slideshow-1" data-pause="hover">
 				
-				<ol id="indicatorsList" class="carousel-indicators style-scope respond-slideshow" visible=""><li data-target="#carousel-slideshow-1" data-slide-to="0" class="style-scope respond-slideshow"></li><li data-target="#carousel-slideshow-1" data-slide-to="1" class="style-scope respond-slideshow active"></li></ol>
+				<ol id="indicatorsList" class="carousel-indicators style-scope respond-slideshow" visible="">
+					<li data-target="#carousel-slideshow-1" data-slide-to="0" class="style-scope respond-slideshow active"></li>
+					<li data-target="#carousel-slideshow-1" data-slide-to="1" class="style-scope respond-slideshow"></li>
+					<li data-target="#carousel-slideshow-1" data-slide-to="2" class="style-scope respond-slideshow"></li>
+				</ol>
 				
 				
-				<div id="slidesList" class="carousel-inner style-scope respond-slideshow" role="listbox"><div class="item  style-scope respond-slideshow"><img src="./Home_files/energy-sample-1.png" class="style-scope respond-slideshow"><div class="container style-scope respond-slideshow"></div></div><div class="item style-scope respond-slideshow active"><img src="./Home_files/energy-sample-2.jpg" class="style-scope respond-slideshow"><div class="container style-scope respond-slideshow"></div></div></div>
+				<div id="slidesList" class="carousel-inner style-scope respond-slideshow" role="listbox">
+					<div class="item  style-scope respond-slideshow active">
+						<img src="./Home_files/energy-sample-1.jpg" class="style-scope respond-slideshow">
+						<div class="container style-scope respond-slideshow"></div>
+					</div>
+					<div class="item style-scope respond-slideshow">
+						<img src="./Home_files/energy-sample-2.jpg" class="style-scope respond-slideshow">
+						<div class="container style-scope respond-slideshow"></div>
+					</div>
+					<div class="item  style-scope respond-slideshow">
+						<img src="./Home_files/energy-sample-3.jpg" class="style-scope respond-slideshow">
+						<div class="container style-scope respond-slideshow"></div>
+					</div>
+				</div>
 				
 				
 				<a class="left carousel-control style-scope respond-slideshow" role="button" data-slide="prev" href="https://demo.respondcms.com/sites/robots/index#carousel-slideshow-1" visible="">
-					<svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" class="style-scope respond-slideshow"><g class="style-scope respond-slideshow"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" class="style-scope respond-slideshow"></path></g></svg>
+					<svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" class="style-scope respond-slideshow">
+						<g class="style-scope respond-slideshow">
+							<path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" class="style-scope respond-slideshow"></path>
+						</g>
+					</svg>
 				</a>
 				<a class="right carousel-control style-scope respond-slideshow" role="button" data-slide="next" href="https://demo.respondcms.com/sites/robots/index#carousel-slideshow-1" visible="">
-					<svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" class="style-scope respond-slideshow"><g class="style-scope respond-slideshow"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" class="style-scope respond-slideshow"></path></g></svg>
+					<svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" class="style-scope respond-slideshow">
+						<g class="style-scope respond-slideshow">
+							<path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" class="style-scope respond-slideshow"></path>
+						</g>
+					</svg>
 				</a>
 				
 			</div>
 		
 		</respond-slideshow>
-    </div>
-</div>
-<div id="block-2" class="block row" data-nested="not-nested" data-containerid="" data-containercssclass="">
-    <div class="col col-md-9">
-        <h3 id="h3-1">Who are we?</h3>
-        <p id="p-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec venenatis mollis arcu, eget posuere libero faucibus sit amet. Cras pharetra pellentesque augue, id vestibulum nisi pharetra et. Morbi in dapibus leo. Vivamus vehicula risus vel eros interdum et mattis tortor congue. Sed gravida interdum est, sit amet pretium nisl consectetur at. In hac habitasse platea dictumst. In purus enim, elementum porttitor tincidunt volutpat, fermentum quis ante. Vivamus at est sem, quis ornare lorem. Cras pulvinar est eget nisi iaculis consequat.
-        </p>
-        <h3 id="h3-2">Learn more about us</h3>
-        <p id="p-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec venenatis mollis arcu, eget posuere libero faucibus sit amet. Cras pharetra pellentesque augue, id vestibulum nisi pharetra et. Morbi in dapibus leo. Vivamus vehicula risus vel eros interdum et mattis tortor congue. Sed gravida interdum est, sit amet pretium nisl consectetur at. In hac habitasse platea dictumst. In purus enim, elementum porttitor tincidunt volutpat, fermentum quis ante. Vivamus at est sem, quis ornare lorem. Cras pulvinar est eget nisi iaculis consequat.</p>
-        <h3 id="h3-3">Why choose Respond?</h3>
-        <p id="p-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec venenatis mollis arcu, eget posuere libero faucibus sit amet. Cras pharetra pellentesque augue, id vestibulum nisi pharetra et. Morbi in dapibus leo. Vivamus vehicula risus vel eros interdum et mattis tortor congue. Sed gravida interdum est, sit amet pretium nisl consectetur at. In hac habitasse platea dictumst. In purus enim, elementum porttitor tincidunt volutpat, fermentum quis ante. Vivamus at est sem, quis ornare lorem. Cras pulvinar est eget nisi iaculis consequat.</p>
-    </div>
-    <div class="col col-md-3">
-        <h3 id="h3-4">About</h3>
-        <p id="p-6">
-	        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec venenatis mollis arcu, eget posuere libero faucibus sit amet. Cras pharetra pellentesque augue, id vestibulum nisi pharetra et.
-	        All Upcoming Classes
-        </p>
-        <h3 id="h3-5">Our Location</h3>
-        <respond-map id="map-1" address="100 Washington Ave, St Louis, MO 63102" zoom="12">
 		
-		<div class="respond-map style-scope">
-			<div id="mapContainer" class="map-container style-scope respond-map" style="position: relative; overflow: hidden; transform: translateZ(0px); background-color: rgb(229, 227, 223);"><div class="gm-style" style="position: absolute; left: 0px; top: 0px; overflow: hidden; width: 100%; height: 100%; z-index: 0;"><div style="position: absolute; left: 0px; top: 0px; overflow: hidden; width: 100%; height: 100%; z-index: 0; cursor: url(https://maps.gstatic.com/mapfiles/openhand_8_8.cur) 8 8, default;"><div style="position: absolute; left: 0px; top: 0px; z-index: 1; width: 100%; transform-origin: 0px 0px 0px; transform: matrix(1, 0, 0, 1, 0, 0);"><div style="transform: translateZ(0px); position: absolute; left: 0px; top: 0px; z-index: 100; width: 100%;"><div style="position: absolute; left: 0px; top: 0px; z-index: 0;"><div aria-hidden="true" style="position: absolute; left: 0px; top: 0px; z-index: 1; visibility: inherit;"><div style="width: 256px; height: 256px; transform: translateZ(0px); position: absolute; left: -111px; top: -113px;"></div><div style="width: 256px; height: 256px; transform: translateZ(0px); position: absolute; left: -111px; top: 143px;"></div><div style="width: 256px; height: 256px; transform: translateZ(0px); position: absolute; left: 145px; top: -113px;"></div><div style="width: 256px; height: 256px; transform: translateZ(0px); position: absolute; left: 145px; top: 143px;"></div></div></div></div><div style="transform: translateZ(0px); position: absolute; left: 0px; top: 0px; z-index: 101; width: 100%;"></div><div style="transform: translateZ(0px); position: absolute; left: 0px; top: 0px; z-index: 102; width: 100%;"></div><div style="transform: translateZ(0px); position: absolute; left: 0px; top: 0px; z-index: 103; width: 100%;"><div style="position: absolute; left: 0px; top: 0px; z-index: -1;"><div aria-hidden="true" style="position: absolute; left: 0px; top: 0px; z-index: 1; visibility: inherit;"><div style="width: 256px; height: 256px; overflow: hidden; transform: translateZ(0px); position: absolute; left: -111px; top: -113px;"><canvas draggable="false" height="256" width="256" style="-webkit-user-select: none; position: absolute; left: 0px; top: 0px; height: 256px; width: 256px;"></canvas></div><div style="width: 256px; height: 256px; overflow: hidden; transform: translateZ(0px); position: absolute; left: -111px; top: 143px;"></div><div style="width: 256px; height: 256px; overflow: hidden; transform: translateZ(0px); position: absolute; left: 145px; top: -113px;"></div><div style="width: 256px; height: 256px; overflow: hidden; transform: translateZ(0px); position: absolute; left: 145px; top: 143px;"></div></div></div></div><div style="position: absolute; z-index: 0; transform: translateZ(0px); left: 0px; top: 0px;"><div style="overflow: hidden; width: 243px; height: 198px;"><img src="./Home_files/StaticMapService.GetMapImage" style="width: 243px; height: 198px;"></div></div><div style="position: absolute; left: 0px; top: 0px; z-index: 0;"><div aria-hidden="true" style="position: absolute; left: 0px; top: 0px; z-index: 1; visibility: inherit;"><div style="transform: translateZ(0px); position: absolute; left: 145px; top: -113px; transition: opacity 200ms ease-out;"><img src="./Home_files/vt" draggable="false" style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px;"></div><div style="transform: translateZ(0px); position: absolute; left: -111px; top: -113px; transition: opacity 200ms ease-out;"><img src="./Home_files/vt(1)" draggable="false" style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px;"></div><div style="transform: translateZ(0px); position: absolute; left: -111px; top: 143px; transition: opacity 200ms ease-out;"><img src="./Home_files/vt(2)" draggable="false" style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px;"></div><div style="transform: translateZ(0px); position: absolute; left: 145px; top: 143px; transition: opacity 200ms ease-out;"><img src="./Home_files/vt(3)" draggable="false" style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px;"></div></div></div></div><div style="position: absolute; left: 0px; top: 0px; z-index: 2; width: 100%; height: 100%;"></div><div style="position: absolute; left: 0px; top: 0px; z-index: 3; width: 100%; transform-origin: 0px 0px 0px; transform: matrix(1, 0, 0, 1, 0, 0);"><div style="transform: translateZ(0px); position: absolute; left: 0px; top: 0px; z-index: 104; width: 100%;"></div><div style="transform: translateZ(0px); position: absolute; left: 0px; top: 0px; z-index: 105; width: 100%;"></div><div style="transform: translateZ(0px); position: absolute; left: 0px; top: 0px; z-index: 106; width: 100%;"></div><div style="transform: translateZ(0px); position: absolute; left: 0px; top: 0px; z-index: 107; width: 100%;"></div></div></div><div style="margin-left: 5px; margin-right: 5px; z-index: 1000000; position: absolute; left: 0px; bottom: 0px;"><a target="_blank" style="position: static; overflow: visible; float: none; display: inline;" href="https://maps.google.com/maps?ll=38.628744,-90.183859&z=12&t=m&hl=en-US&gl=US&mapclient=apiv3" title="Click to see this area on Google Maps"><div style="width: 66px; height: 26px; cursor: pointer;"><img src="./Home_files/google4.png" draggable="false" style="position: absolute; left: 0px; top: 0px; width: 66px; height: 26px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px;"></div></a></div><div style="padding: 15px 21px; border: 1px solid rgb(171, 171, 171); font-family: Roboto, Arial, sans-serif; color: rgb(34, 34, 34); box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 16px; z-index: 10000002; display: none; width: 189px; height: 148px; position: absolute; left: 5px; top: 9px; background-color: white;"><div style="padding: 0px 0px 10px; font-size: 16px;">Map Data</div><div style="font-size: 13px;">Map data ©2015 Google</div><div style="width: 13px; height: 13px; overflow: hidden; position: absolute; opacity: 0.7; right: 12px; top: 12px; z-index: 10000; cursor: pointer;"><img src="./Home_files/mapcnt6.png" draggable="false" style="position: absolute; left: -2px; top: -336px; width: 59px; height: 492px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px;"></div></div><div class="gmnoprint" style="z-index: 1000001; position: absolute; right: 72px; bottom: 0px; width: 121px;"><div draggable="false" class="gm-style-cc" style="-webkit-user-select: none; height: 14px; line-height: 14px;"><div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;"><div style="width: 1px;"></div><div style="width: auto; height: 100%; margin-left: 1px; background-color: rgb(245, 245, 245);"></div></div><div style="position: relative; padding-right: 6px; padding-left: 6px; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(68, 68, 68); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;"><a style="color: rgb(68, 68, 68); text-decoration: none; cursor: pointer; display: none;">Map Data</a><span>Map data ©2015 Google</span></div></div></div><div class="gmnoscreen" style="position: absolute; right: 0px; bottom: 0px;"><div style="font-family: Roboto, Arial, sans-serif; font-size: 11px; color: rgb(68, 68, 68); direction: ltr; text-align: right; background-color: rgb(245, 245, 245);">Map data ©2015 Google</div></div><div class="gmnoprint gm-style-cc" draggable="false" style="z-index: 1000001; -webkit-user-select: none; height: 14px; line-height: 14px; position: absolute; right: 0px; bottom: 0px;"><div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;"><div style="width: 1px;"></div><div style="width: auto; height: 100%; margin-left: 1px; background-color: rgb(245, 245, 245);"></div></div><div style="position: relative; padding-right: 6px; padding-left: 6px; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(68, 68, 68); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;"><a href="https://www.google.com/intl/en-US_US/help/terms_maps.html" target="_blank" style="text-decoration: none; cursor: pointer; color: rgb(68, 68, 68);">Terms of Use</a></div></div><div draggable="false" class="gm-style-cc" style="-webkit-user-select: none; height: 14px; line-height: 14px; display: none; position: absolute; right: 0px; bottom: 0px;"><div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;"><div style="width: 1px;"></div><div style="width: auto; height: 100%; margin-left: 1px; background-color: rgb(245, 245, 245);"></div></div><div style="position: relative; padding-right: 6px; padding-left: 6px; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(68, 68, 68); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;"><a target="_new" title="Report errors in the road map or imagery to Google" href="https://www.google.com/maps/@38.6287436,-90.1838586,12z/data=!10m1!1e1!12b1?source=apiv3&rapsrc=apiv3" style="font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(68, 68, 68); text-decoration: none; position: relative;">Report a map error</a></div></div><div class="gmnoprint" draggable="false" controlwidth="0" controlheight="0" style="margin: 10px; -webkit-user-select: none; position: absolute; display: none; bottom: 14px; right: 0px;"><div class="gmnoprint" style="display: none; position: absolute;"><div draggable="false" style="-webkit-user-select: none; box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px; border-radius: 2px; cursor: pointer; background-color: rgb(255, 255, 255);"><div title="Zoom in" style="position: relative;"><div style="overflow: hidden; position: absolute;"><img src="./Home_files/tmapctrl.png" draggable="false" style="position: absolute; left: 0px; top: 0px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; width: 120px; height: 54px;"></div></div><div style="position: relative; overflow: hidden; width: 67%; height: 1px; left: 16%; background-color: rgb(230, 230, 230);"></div><div title="Zoom out" style="position: relative;"><div style="overflow: hidden; position: absolute;"><img src="./Home_files/tmapctrl.png" draggable="false" style="position: absolute; left: 0px; top: 0px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; width: 120px; height: 54px;"></div></div></div></div><div controlwidth="28" controlheight="28" style="box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px; border-radius: 2px; width: 28px; height: 28px; cursor: url(https://maps.gstatic.com/mapfiles/openhand_8_8.cur) 8 8, default; display: none; position: absolute; background-color: rgb(255, 255, 255);"><div style="position: absolute; left: 1px; top: 1px;"></div></div><div class="gmnoprint" controlwidth="28" controlheight="0" style="display: none; position: absolute;"><div title="Rotate map 90 degrees" style="width: 28px; height: 28px; overflow: hidden; position: absolute; border-radius: 2px; box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px; cursor: pointer; display: none; background-color: rgb(255, 255, 255);"><img src="./Home_files/tmapctrl4.png" draggable="false" style="position: absolute; left: -141px; top: 6px; width: 170px; height: 54px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px;"></div><div class="gm-tilt" style="width: 0px; height: 0px; overflow: hidden; position: absolute; border-radius: 2px; box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px; top: 0px; cursor: pointer; background-color: rgb(255, 255, 255);"><img src="./Home_files/tmapctrl4.png" draggable="false" style="position: absolute; left: 0px; top: 0px; width: 170px; height: 54px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px;"></div></div></div><div class="gmnoprint" style="margin: 10px; z-index: 0; position: absolute; cursor: pointer; display: none; left: 0px; top: 0px;"><div class="gm-style-mtc" style="float: left;"><div draggable="false" title="Show street map" style="direction: ltr; overflow: hidden; text-align: center; position: relative; color: rgb(0, 0, 0); font-family: Roboto, Arial, sans-serif; -webkit-user-select: none; font-size: 11px; padding: 8px; border-bottom-left-radius: 2px; border-top-left-radius: 2px; -webkit-background-clip: padding-box; box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px; min-width: 21px; font-weight: 500; background-color: rgb(255, 255, 255); background-clip: padding-box;">Map</div><div style="z-index: -1; padding: 2px; border-bottom-left-radius: 2px; border-bottom-right-radius: 2px; box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px; position: absolute; left: 0px; top: 0px; text-align: left; display: none; background-color: white;"><div draggable="false" title="Show street map with terrain" style="color: rgb(0, 0, 0); font-family: Roboto, Arial, sans-serif; -webkit-user-select: none; font-size: 11px; padding: 6px 8px 6px 6px; direction: ltr; text-align: left; white-space: nowrap; background-color: rgb(255, 255, 255);"><span role="checkbox" style="box-sizing: border-box; position: relative; line-height: 0; font-size: 0px; margin: 0px 5px 0px 0px; display: inline-block; border: 1px solid rgb(198, 198, 198); border-radius: 1px; width: 13px; height: 13px; vertical-align: middle; background-color: rgb(255, 255, 255);"><div style="position: absolute; left: 1px; top: -2px; width: 13px; height: 11px; overflow: hidden; display: none;"><img src="./Home_files/imgs8.png" draggable="false" style="position: absolute; left: -52px; top: -44px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; width: 68px; height: 67px;"></div></span><label style="vertical-align: middle; cursor: pointer;">Terrain</label></div></div></div><div class="gm-style-mtc" style="float: left;"><div draggable="false" title="Show satellite imagery" style="direction: ltr; overflow: hidden; text-align: center; position: relative; color: rgb(86, 86, 86); font-family: Roboto, Arial, sans-serif; -webkit-user-select: none; font-size: 11px; padding: 8px; border-bottom-right-radius: 2px; border-top-right-radius: 2px; -webkit-background-clip: padding-box; box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px; border-left-width: 0px; min-width: 39px; background-color: rgb(255, 255, 255); background-clip: padding-box;">Satellite</div><div style="z-index: -1; padding: 2px; border-bottom-left-radius: 2px; border-bottom-right-radius: 2px; box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px; position: absolute; right: 0px; top: 0px; text-align: left; display: none; background-color: white;"><div draggable="false" title="Show imagery with street names" style="color: rgb(0, 0, 0); font-family: Roboto, Arial, sans-serif; -webkit-user-select: none; font-size: 11px; padding: 6px 8px 6px 6px; direction: ltr; text-align: left; white-space: nowrap; background-color: rgb(255, 255, 255);"><span role="checkbox" style="box-sizing: border-box; position: relative; line-height: 0; font-size: 0px; margin: 0px 5px 0px 0px; display: inline-block; border: 1px solid rgb(198, 198, 198); border-radius: 1px; width: 13px; height: 13px; vertical-align: middle; background-color: rgb(255, 255, 255);"><div style="position: absolute; left: 1px; top: -2px; width: 13px; height: 11px; overflow: hidden;"><img src="./Home_files/imgs8.png" draggable="false" style="position: absolute; left: -52px; top: -44px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; width: 68px; height: 67px;"></div></span><label style="vertical-align: middle; cursor: pointer;">Labels</label></div></div></div></div></div></div>
-				<p class="map-address style-scope respond-map">
-					<span class="style-scope respond-map">7110 IL-162, Maryville, IL 62062</span>&nbsp;
-					<a id="directions" class="style-scope respond-map" href="http://maps.google.com/?q=7110%20IL-162,%20Maryville,%20IL%2062062">Get Directions</a>
-				</p>
+    </div>
+
+
+		</div>
+
+		<div id="block-2" class="block row" data-nested="not-nested"
+			data-containerid="" data-containercssclass="">
+			<div class="col col-md-9">
+			
+				<h3 id="h3-1">WHO WE ARE?</h3>
+				<p id="p-3">We are a team of ____ freshman at Maryville Christian School ready to embark on our inaugural year participating in the FIRST Tech Challenge robotics competition!  We are supported by adult mentors that _____________.</p>
+				
+				<h3 id="h3-2">WHAT DO WE DO?</h3>
+				<p id="p-4"><b><i>Training the Technology Leaders of Tomorrow.</i></b>  We design and build a robot that competes in the FIRST Tech Challenge (FTC) against other in robots in a game that is different each year. But, it’s much more than just building a robot – our team operates like a small business and feels like a family!</p>
+				<p id="p-4"><b><i>Making a Difference, Not Just a Robot!</i></b>  Our team’s goals include participating in outreach activities including _________________.</p>
+				
+				<h3 id="h3-3">WHAT IS <i>FIRST</i>?</h3>
+				<p id="p-5"><b><i>FIRST (For Inspiration and Recognition of Science and Technology)</i></b> is a worldwide organization sponsoring robotics competitions for students.  It was created in 1989 to promote interest in science, technology, engineering and mathematics.  Students learn to perform high-quality, challenging work in a competitive but collaborative environment. There is, however, more to FIRST than building robots.  During FIRST competitions, teams are rewarded for excellence in design, demonstrated team spirit, Gracious Professionalism® and the ability to overcome obstacles.</p>
+				
+				<h3 id="h3-3">WHY ROBOTICS?</h3>
+				<p id="p-6"><b><i>FIRST</i></b> Robotics is all about having fun while learning, and so are we!  Along the way our team members learn technical skills from mechanical and electrical engineering, computer programming, marketing and public relations, but most importantly, they learn about teamwork, leadership, respect and integrity.</p>
+
+				<h3 id="h3-3">HOW CAN YOU HELP?</h3>
+				<p id="p-6">Come on out and cheer on the MCHS RoboLions at a competition, ______________, or _______________.  As an FTC robotics team, with new technological challenges each year, we have to plan for the future.</p>
+
+				<h3 id="h3-3">WHERE CAN I FIND MORE INFORMATION ON THE MCHS ROBOLIONS?</h3>
+				<p id="p-6">Check our team’s website at www.____________.com.  You can also like us on Facebook or Instagram!</p>
+
 			</div>
-		
-		
-	</respond-map>
-    </div>
-</div>
-</div>
+			<div class="col col-md-3">
+				<h3 id="h3-4">About</h3>
+				<p id="p-6">We are a team of ____ freshman at Maryville Christian School ready to embark on our inaugural year participating in the FIRST Tech Challenge robotics competition! We are supported by adult mentors that _____________.</p>
+				<h3 id="h3-5">Our Location</h3>
+				<respond-map id="map-1"
+					address="100 Washington Ave, St Louis, MO 63102" zoom="12">
+
+				<div class="respond-map style-scope">
+					<div id="mapContainer"
+						class="map-container style-scope respond-map"
+						style="position: relative; overflow: hidden; transform: translateZ(0px); background-color: rgb(229, 227, 223);">
+						<div class="gm-style"
+							style="position: absolute; left: 0px; top: 0px; overflow: hidden; width: 100%; height: 100%; z-index: 0;">
+							<div
+								style="position: absolute; left: 0px; top: 0px; overflow: hidden; width: 100%; height: 100%; z-index: 0; cursor: url(https://maps.gstatic.com/mapfiles/openhand_8_8.cur) 8 8, default;">
+								<div
+									style="position: absolute; left: 0px; top: 0px; z-index: 1; width: 100%; transform-origin: 0px 0px 0px; transform: matrix(1, 0, 0, 1, 0, 0);">
+									<div
+										style="transform: translateZ(0px); position: absolute; left: 0px; top: 0px; z-index: 100; width: 100%;">
+										<div
+											style="position: absolute; left: 0px; top: 0px; z-index: 0;">
+											<div aria-hidden="true"
+												style="position: absolute; left: 0px; top: 0px; z-index: 1; visibility: inherit;">
+												<div
+													style="width: 256px; height: 256px; transform: translateZ(0px); position: absolute; left: -111px; top: -113px;"></div>
+												<div
+													style="width: 256px; height: 256px; transform: translateZ(0px); position: absolute; left: -111px; top: 143px;"></div>
+												<div
+													style="width: 256px; height: 256px; transform: translateZ(0px); position: absolute; left: 145px; top: -113px;"></div>
+												<div
+													style="width: 256px; height: 256px; transform: translateZ(0px); position: absolute; left: 145px; top: 143px;"></div>
+											</div>
+										</div>
+									</div>
+									<div
+										style="transform: translateZ(0px); position: absolute; left: 0px; top: 0px; z-index: 101; width: 100%;"></div>
+									<div
+										style="transform: translateZ(0px); position: absolute; left: 0px; top: 0px; z-index: 102; width: 100%;"></div>
+									<div
+										style="transform: translateZ(0px); position: absolute; left: 0px; top: 0px; z-index: 103; width: 100%;">
+										<div
+											style="position: absolute; left: 0px; top: 0px; z-index: -1;">
+											<div aria-hidden="true"
+												style="position: absolute; left: 0px; top: 0px; z-index: 1; visibility: inherit;">
+												<div
+													style="width: 256px; height: 256px; overflow: hidden; transform: translateZ(0px); position: absolute; left: -111px; top: -113px;">
+													<canvas draggable="false" height="256" width="256"
+														style="-webkit-user-select: none; position: absolute; left: 0px; top: 0px; height: 256px; width: 256px;"></canvas>
+												</div>
+												<div
+													style="width: 256px; height: 256px; overflow: hidden; transform: translateZ(0px); position: absolute; left: -111px; top: 143px;"></div>
+												<div
+													style="width: 256px; height: 256px; overflow: hidden; transform: translateZ(0px); position: absolute; left: 145px; top: -113px;"></div>
+												<div
+													style="width: 256px; height: 256px; overflow: hidden; transform: translateZ(0px); position: absolute; left: 145px; top: 143px;"></div>
+											</div>
+										</div>
+									</div>
+									<div
+										style="position: absolute; z-index: 0; transform: translateZ(0px); left: 0px; top: 0px;">
+										<div style="overflow: hidden; width: 243px; height: 198px;">
+											<img src="./Home_files/StaticMapService.GetMapImage"
+												style="width: 243px; height: 198px;">
+										</div>
+									</div>
+									<div
+										style="position: absolute; left: 0px; top: 0px; z-index: 0;">
+										<div aria-hidden="true"
+											style="position: absolute; left: 0px; top: 0px; z-index: 1; visibility: inherit;">
+											<div
+												style="transform: translateZ(0px); position: absolute; left: 145px; top: -113px; transition: opacity 200ms ease-out;">
+												<img src="./Home_files/vt" draggable="false"
+													style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px;">
+											</div>
+											<div
+												style="transform: translateZ(0px); position: absolute; left: -111px; top: -113px; transition: opacity 200ms ease-out;">
+												<img src="./Home_files/vt(1)" draggable="false"
+													style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px;">
+											</div>
+											<div
+												style="transform: translateZ(0px); position: absolute; left: -111px; top: 143px; transition: opacity 200ms ease-out;">
+												<img src="./Home_files/vt(2)" draggable="false"
+													style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px;">
+											</div>
+											<div
+												style="transform: translateZ(0px); position: absolute; left: 145px; top: 143px; transition: opacity 200ms ease-out;">
+												<img src="./Home_files/vt(3)" draggable="false"
+													style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px;">
+											</div>
+										</div>
+									</div>
+								</div>
+								<div
+									style="position: absolute; left: 0px; top: 0px; z-index: 2; width: 100%; height: 100%;"></div>
+								<div
+									style="position: absolute; left: 0px; top: 0px; z-index: 3; width: 100%; transform-origin: 0px 0px 0px; transform: matrix(1, 0, 0, 1, 0, 0);">
+									<div
+										style="transform: translateZ(0px); position: absolute; left: 0px; top: 0px; z-index: 104; width: 100%;"></div>
+									<div
+										style="transform: translateZ(0px); position: absolute; left: 0px; top: 0px; z-index: 105; width: 100%;"></div>
+									<div
+										style="transform: translateZ(0px); position: absolute; left: 0px; top: 0px; z-index: 106; width: 100%;"></div>
+									<div
+										style="transform: translateZ(0px); position: absolute; left: 0px; top: 0px; z-index: 107; width: 100%;"></div>
+								</div>
+							</div>
+							<div
+								style="margin-left: 5px; margin-right: 5px; z-index: 1000000; position: absolute; left: 0px; bottom: 0px;">
+								<a target="_blank"
+									style="position: static; overflow: visible; float: none; display: inline;"
+									href="https://maps.google.com/maps?ll=38.628744,-90.183859&z=12&t=m&hl=en-US&gl=US&mapclient=apiv3"
+									title="Click to see this area on Google Maps"><div
+										style="width: 66px; height: 26px; cursor: pointer;">
+										<img src="./Home_files/google4.png" draggable="false"
+											style="position: absolute; left: 0px; top: 0px; width: 66px; height: 26px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px;">
+									</div></a>
+							</div>
+							<div
+								style="padding: 15px 21px; border: 1px solid rgb(171, 171, 171); font-family: Roboto, Arial, sans-serif; color: rgb(34, 34, 34); box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 16px; z-index: 10000002; display: none; width: 189px; height: 148px; position: absolute; left: 5px; top: 9px; background-color: white;">
+								<div style="padding: 0px 0px 10px; font-size: 16px;">Map
+									Data</div>
+								<div style="font-size: 13px;">Map data ©2015 Google</div>
+								<div
+									style="width: 13px; height: 13px; overflow: hidden; position: absolute; opacity: 0.7; right: 12px; top: 12px; z-index: 10000; cursor: pointer;">
+									<img src="./Home_files/mapcnt6.png" draggable="false"
+										style="position: absolute; left: -2px; top: -336px; width: 59px; height: 492px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px;">
+								</div>
+							</div>
+							<div class="gmnoprint"
+								style="z-index: 1000001; position: absolute; right: 72px; bottom: 0px; width: 121px;">
+								<div draggable="false" class="gm-style-cc"
+									style="-webkit-user-select: none; height: 14px; line-height: 14px;">
+									<div
+										style="opacity: 0.7; width: 100%; height: 100%; position: absolute;">
+										<div style="width: 1px;"></div>
+										<div
+											style="width: auto; height: 100%; margin-left: 1px; background-color: rgb(245, 245, 245);"></div>
+									</div>
+									<div
+										style="position: relative; padding-right: 6px; padding-left: 6px; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(68, 68, 68); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;">
+										<a
+											style="color: rgb(68, 68, 68); text-decoration: none; cursor: pointer; display: none;">Map
+											Data</a><span>Map data ©2015 Google</span>
+									</div>
+								</div>
+							</div>
+							<div class="gmnoscreen"
+								style="position: absolute; right: 0px; bottom: 0px;">
+								<div
+									style="font-family: Roboto, Arial, sans-serif; font-size: 11px; color: rgb(68, 68, 68); direction: ltr; text-align: right; background-color: rgb(245, 245, 245);">Map
+									data ©2015 Google</div>
+							</div>
+							<div class="gmnoprint gm-style-cc" draggable="false"
+								style="z-index: 1000001; -webkit-user-select: none; height: 14px; line-height: 14px; position: absolute; right: 0px; bottom: 0px;">
+								<div
+									style="opacity: 0.7; width: 100%; height: 100%; position: absolute;">
+									<div style="width: 1px;"></div>
+									<div
+										style="width: auto; height: 100%; margin-left: 1px; background-color: rgb(245, 245, 245);"></div>
+								</div>
+								<div
+									style="position: relative; padding-right: 6px; padding-left: 6px; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(68, 68, 68); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;">
+									<a
+										href="https://www.google.com/intl/en-US_US/help/terms_maps.html"
+										target="_blank"
+										style="text-decoration: none; cursor: pointer; color: rgb(68, 68, 68);">Terms
+										of Use</a>
+								</div>
+							</div>
+							<div draggable="false" class="gm-style-cc"
+								style="-webkit-user-select: none; height: 14px; line-height: 14px; display: none; position: absolute; right: 0px; bottom: 0px;">
+								<div
+									style="opacity: 0.7; width: 100%; height: 100%; position: absolute;">
+									<div style="width: 1px;"></div>
+									<div
+										style="width: auto; height: 100%; margin-left: 1px; background-color: rgb(245, 245, 245);"></div>
+								</div>
+								<div
+									style="position: relative; padding-right: 6px; padding-left: 6px; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(68, 68, 68); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;">
+									<a target="_new"
+										title="Report errors in the road map or imagery to Google"
+										href="https://www.google.com/maps/@38.6287436,-90.1838586,12z/data=!10m1!1e1!12b1?source=apiv3&rapsrc=apiv3"
+										style="font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(68, 68, 68); text-decoration: none; position: relative;">Report
+										a map error</a>
+								</div>
+							</div>
+							<div class="gmnoprint" draggable="false" controlwidth="0"
+								controlheight="0"
+								style="margin: 10px; -webkit-user-select: none; position: absolute; display: none; bottom: 14px; right: 0px;">
+								<div class="gmnoprint"
+									style="display: none; position: absolute;">
+									<div draggable="false"
+										style="-webkit-user-select: none; box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px; border-radius: 2px; cursor: pointer; background-color: rgb(255, 255, 255);">
+										<div title="Zoom in" style="position: relative;">
+											<div style="overflow: hidden; position: absolute;">
+												<img src="./Home_files/tmapctrl.png" draggable="false"
+													style="position: absolute; left: 0px; top: 0px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; width: 120px; height: 54px;">
+											</div>
+										</div>
+										<div
+											style="position: relative; overflow: hidden; width: 67%; height: 1px; left: 16%; background-color: rgb(230, 230, 230);"></div>
+										<div title="Zoom out" style="position: relative;">
+											<div style="overflow: hidden; position: absolute;">
+												<img src="./Home_files/tmapctrl.png" draggable="false"
+													style="position: absolute; left: 0px; top: 0px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; width: 120px; height: 54px;">
+											</div>
+										</div>
+									</div>
+								</div>
+								<div controlwidth="28" controlheight="28"
+									style="box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px; border-radius: 2px; width: 28px; height: 28px; cursor: url(https://maps.gstatic.com/mapfiles/openhand_8_8.cur) 8 8, default; display: none; position: absolute; background-color: rgb(255, 255, 255);">
+									<div style="position: absolute; left: 1px; top: 1px;"></div>
+								</div>
+								<div class="gmnoprint" controlwidth="28" controlheight="0"
+									style="display: none; position: absolute;">
+									<div title="Rotate map 90 degrees"
+										style="width: 28px; height: 28px; overflow: hidden; position: absolute; border-radius: 2px; box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px; cursor: pointer; display: none; background-color: rgb(255, 255, 255);">
+										<img src="./Home_files/tmapctrl4.png" draggable="false"
+											style="position: absolute; left: -141px; top: 6px; width: 170px; height: 54px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px;">
+									</div>
+									<div class="gm-tilt"
+										style="width: 0px; height: 0px; overflow: hidden; position: absolute; border-radius: 2px; box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px; top: 0px; cursor: pointer; background-color: rgb(255, 255, 255);">
+										<img src="./Home_files/tmapctrl4.png" draggable="false"
+											style="position: absolute; left: 0px; top: 0px; width: 170px; height: 54px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px;">
+									</div>
+								</div>
+							</div>
+							<div class="gmnoprint"
+								style="margin: 10px; z-index: 0; position: absolute; cursor: pointer; display: none; left: 0px; top: 0px;">
+								<div class="gm-style-mtc" style="float: left;">
+									<div draggable="false" title="Show street map"
+										style="direction: ltr; overflow: hidden; text-align: center; position: relative; color: rgb(0, 0, 0); font-family: Roboto, Arial, sans-serif; -webkit-user-select: none; font-size: 11px; padding: 8px; border-bottom-left-radius: 2px; border-top-left-radius: 2px; -webkit-background-clip: padding-box; box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px; min-width: 21px; font-weight: 500; background-color: rgb(255, 255, 255); background-clip: padding-box;">Map</div>
+									<div
+										style="z-index: -1; padding: 2px; border-bottom-left-radius: 2px; border-bottom-right-radius: 2px; box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px; position: absolute; left: 0px; top: 0px; text-align: left; display: none; background-color: white;">
+										<div draggable="false" title="Show street map with terrain"
+											style="color: rgb(0, 0, 0); font-family: Roboto, Arial, sans-serif; -webkit-user-select: none; font-size: 11px; padding: 6px 8px 6px 6px; direction: ltr; text-align: left; white-space: nowrap; background-color: rgb(255, 255, 255);">
+											<span role="checkbox"
+												style="box-sizing: border-box; position: relative; line-height: 0; font-size: 0px; margin: 0px 5px 0px 0px; display: inline-block; border: 1px solid rgb(198, 198, 198); border-radius: 1px; width: 13px; height: 13px; vertical-align: middle; background-color: rgb(255, 255, 255);"><div
+													style="position: absolute; left: 1px; top: -2px; width: 13px; height: 11px; overflow: hidden; display: none;">
+													<img src="./Home_files/imgs8.png" draggable="false"
+														style="position: absolute; left: -52px; top: -44px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; width: 68px; height: 67px;">
+												</div></span><label style="vertical-align: middle; cursor: pointer;">Terrain</label>
+										</div>
+									</div>
+								</div>
+								<div class="gm-style-mtc" style="float: left;">
+									<div draggable="false" title="Show satellite imagery"
+										style="direction: ltr; overflow: hidden; text-align: center; position: relative; color: rgb(86, 86, 86); font-family: Roboto, Arial, sans-serif; -webkit-user-select: none; font-size: 11px; padding: 8px; border-bottom-right-radius: 2px; border-top-right-radius: 2px; -webkit-background-clip: padding-box; box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px; border-left-width: 0px; min-width: 39px; background-color: rgb(255, 255, 255); background-clip: padding-box;">Satellite</div>
+									<div
+										style="z-index: -1; padding: 2px; border-bottom-left-radius: 2px; border-bottom-right-radius: 2px; box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px; position: absolute; right: 0px; top: 0px; text-align: left; display: none; background-color: white;">
+										<div draggable="false" title="Show imagery with street names"
+											style="color: rgb(0, 0, 0); font-family: Roboto, Arial, sans-serif; -webkit-user-select: none; font-size: 11px; padding: 6px 8px 6px 6px; direction: ltr; text-align: left; white-space: nowrap; background-color: rgb(255, 255, 255);">
+											<span role="checkbox"
+												style="box-sizing: border-box; position: relative; line-height: 0; font-size: 0px; margin: 0px 5px 0px 0px; display: inline-block; border: 1px solid rgb(198, 198, 198); border-radius: 1px; width: 13px; height: 13px; vertical-align: middle; background-color: rgb(255, 255, 255);"><div
+													style="position: absolute; left: 1px; top: -2px; width: 13px; height: 11px; overflow: hidden;">
+													<img src="./Home_files/imgs8.png" draggable="false"
+														style="position: absolute; left: -52px; top: -44px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; width: 68px; height: 67px;">
+												</div></span><label style="vertical-align: middle; cursor: pointer;">Labels</label>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<p class="map-address style-scope respond-map">
+						<span class="style-scope respond-map">7110 IL-162,
+							Maryville, IL 62062</span>&nbsp; <a id="directions"
+							class="style-scope respond-map"
+							href="http://maps.google.com/?q=7110%20IL-162,%20Maryville,%20IL%2062062">Get
+							Directions</a>
+					</p>
+				</div>
+
+
+				</respond-map>
+			</div>
+		</div>
+
+	</div>
 
 
 	<footer role="contentinfo">
@@ -1611,14 +1924,19 @@ body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relati
 			<div>
 				<div id="footer-block-1" class="block row" data-nested="not-nested"
 					data-containerid="" data-containercssclass="">
-					<div class="col col-md-6">
+					<div class="col col-md-4">
 						<h3 id="footer-h3-1">Contact</h3>
 						<p id="footer-p-1">
-							Give us a call at (123) 456-7890 or email us at&nbsp;<a href="mailto:sample@sample.com">sample@sample.com</a>.
+							Email us at&nbsp;<a href="mailto:mchsrobolions@gmail.com">mchsrobolions@gmail.com</a>.
 						</p>
 					</div>
-					<div class="col col-md-6">
+					<div class="col col-md-4" style="text-align: center;">
 						<p id="footer-p-2" style="padding-top: 75px;">
+							<a href="http://www.usfirst.org/"><img src="./Home_files/FTC_FIRSTblue_RGB.jpg"></a>
+						</p>
+					</div>
+					<div class="col col-md-4">
+						<p id="footer-p-3" style="padding-top: 75px;">
 							This site is powered by <a href="http://respondcms.com/">Respond CMS</a>.
 						</p>
 					</div>
@@ -1629,10 +1947,11 @@ body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relati
 						<respond-menu id="menu-1" type="footer">
 
 						<ul id="undefined" class="undefined">
-							<li><a href="Home.html">Home</a></li>
+							<li class="active"><a href="Home.html">Home</a></li>
 							<li><a href="Blog.html">Blog</a></li>
+							<li><a href="Resources.html">Resources</a></li>
 							<li><a href="About.html">About</a></li>
-							<li class="active"><a href="Contact.html">Contact</a></li>
+							<li><a href="Contact.html">Contact</a></li>
 						</ul>
 
 						</respond-menu>
