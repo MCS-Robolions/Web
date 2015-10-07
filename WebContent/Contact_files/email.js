@@ -5,11 +5,11 @@ function send() {
 			document.getElementById("email").value == '') {
 		alert("Please complete the required fields.");
 	} else {
-		sendGmail({
+		sendEmail({
 			from: document.getElementById("email").value,
-		    to: 'beckettmj@gmail.com',
+		    to: 'mchsrobolions@gmail.com',
 		    subject: 'Sponsoring RoboLions',
-		    message: 'Please contact me about sponsoring MCHS RoboLions!\n\n'+
+		    body: 'Please contact me about sponsoring MCHS RoboLions!\n\n'+
 		    		 'You can reach me at ' + document.getElementById("email").value+'\n\n'+
 		    		 'Any additional info: ' + document.getElementById("additionalInformation").value+'\n\n'+
 		             'Sincerely,\n'+
@@ -19,13 +19,10 @@ function send() {
 	
 }
 
-var sendGmail = function(opts){
-    var url = 'http://mail.google.com/mail/?view=cm&fs=1'+
-              '&to=' + opts.to +
-              '&su=' + opts.subject +
-              '&body=' + opts.message.replace(/\n/g,'%0A') +
-              '&ui=1';
-//    location.href = url;
-    window.open(url, '_blank');
-    
+var sendEmail = function(opts){
+    var url = 'mailto:' + opts.to + 
+    		  '?subject=' + opts.subject + 
+    		  '&body=' + opts.body.replace(/\n/g,'%0A');
+    window.location.href = url;
 }
+
