@@ -1,1747 +1,2448 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style scope="respond-meta">.respond-meta-container.respond-meta {
-  position: relative;
-		  	height: 40px;
-		  	padding: 5px 5px 5px 0;
+<html lang="en" dir="ltr">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<style scope="robo-meta">
+.robo-meta-container.robo-meta {
+	position: relative;
+	height: 40px;
+	padding: 5px 5px 5px 0;
+}
+
+.robo-meta-container.has-photo.robo-meta {
+	padding-left: 60px;
+}
+
+.robo-meta-container.robo-meta img.robo-meta {
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	display: block;
+	border: none;
+	height: 40px;
+	width: 40px;
+	border-radius: 50%;
+}
+
+.robo-meta-container.robo-meta p.robo-meta {
+	height: 40px;
+	line-height: 40px;
+	text-transform: uppercase;
+	font-size: 13px;
+	color: #888;
+	margin: 0;
+	padding: 0;
 }
-
-.respond-meta-container.has-photo.respond-meta {
-  padding-left: 60px;
-}
-
-.respond-meta-container.respond-meta img.respond-meta {
-  position: absolute;
-	  		top: 5px;
-	  		left: 5px;
-  			display: block;
-  			border: none;
-  			height: 40px;
-  			width: 40px;
-  			border-radius: 50%;
-}
-
-.respond-meta-container.respond-meta p.respond-meta {
-  height: 40px;
-	  		line-height: 40px;
-	  		text-transform: uppercase;
-	  		font-size: 13px;
-	  		color: #888;
-	  		margin: 0;
-	  		padding: 0;
-}</style><style scope="respond-list">.list-actions.respond-list {
-  margin: 15px 0 25px 0;
-		  	padding: 0;
-		  	vertical-align: top;
-}
-
-.list-actions.respond-list .pager.respond-list {
-  margin: 0 15px 0 0;
-		  	padding: 0;
-			display: none;
-}
-
-.list-actions.respond-list .pager[visible].respond-list {
-  display: inline-block;
-}
-
-.list-actions.respond-list button.respond-list {
-  font-size: 14px;
-		  	display: inline-block;
-		    box-sizing: border-box;
-		  	background-color: #fff;
-		  	border: 1px solid #ddd;
-		  	padding: 0 15px;
-		  	font-size: 16px;
-		    height: 45px;
-		    line-height: 45px;
-		    vertical-align: top;
-		    outline: none;
-}
-
-.list-actions.respond-list a.respond-list {
-  display: inline-block;
-		    box-sizing: border-box;
-		    text-decoration: none;
-			background-color: #fff;
-		  	border: 1px solid #ddd;
-		  	padding: 0 15px;
-		  	margin: 0 1px;
-		  	font-size: 16px;
-		    cursor: pointer;
-		    height: 45px;
-		    line-height: 45px;
-		    vertical-align: top;
-}
-
-.list-actions.respond-list a[active].respond-list {
-  background-color: #f0f0f0;
-}
-
-.list-actions.respond-list button.respond-list {
-  display: none;
-}
-
-.list-actions.respond-list button[visible].respond-list {
-  display: inline-block;
-}
-
-.list-actions.respond-list svg.respond-list {
-  width: 25px;
-			    height: 25px;
-			  	margin: 0;
-			  	padding: 0;
-			  	line-height: 25px;
-			  	display: inline-block;
-			  	vertical-align: middle;
-			  	fill: currentColor;
-}
-
-.respond-map.respond-list {
-  width: 100%;
-		  	height: 200px;
-		  	border: 1px solid #ddd;
-		  	margin-bottom: 20px;
-}
-
-.respond-calendar.respond-list {
-  margin: 0px 0px 20px 0px;
-		  border: 1px solid #ddd;
-		  overflow: hidden;
-}
-
-.respond-calendar.respond-list a.respond-list, .respond-calendar.respond-list a.respond-list:visited, .respond-calendar.respond-list a.respond-list:hover {
-  text-decoration: none;
-}
-
-.respond-calendar.respond-list .header.respond-list, .respond-calendar.respond-list .week.respond-list {
-  clear: both;
-		  		width: 100.1%;
-}
-
-.respond-calendar.respond-list .title.respond-list {
-  position: relative;
-				color: #aaa;
-		  		text-transform: uppercase;
-		  		font-size: 12px;
-		  		text-align: center;
-		  		padding: 10px 0;
-}
-
-.respond-calendar.respond-list .title.respond-list .prev.respond-list {
-  position: absolute;
-		  		top: 8px;
-		  		left: 10px;
-		  		font-size: 20px;
-		  		cursor: pointer;
-}
-
-.respond-calendar.respond-list .title.respond-list .next.respond-list {
-  position: absolute;
-		  		top: 8px;
-		  		right: 10px;
-		  		font-size: 20px;
-		  		cursor: pointer;
-}
-
-.respond-calendar.respond-list .week.respond-list {
-  height: 150px;
-		  		width: 100.1%;
-		  		display: block;
-}
-
-.respond-calendar.respond-list .day.respond-list {
-  position: relative;
-		        display: block;
-		  		box-sizing: border-box;
-		        margin: -1px 0 0 0;
-		        padding: 35px 0 0 0;
-		        width: 14.28%;
-		        height: 150px;
-		        text-align: left;
-		        font-size: 0.8em;
-		        color: #ddd;
-		        float: left;
-		        color: #888;
-		        border-right: 1px solid #ddd;
-		        border-bottom: 1px solid #ddd;
-}
-
-.respond-calendar.respond-list .day.respond-list:nth-child(7) {
-  border-right: 0;
-}
-
-.respond-calendar.respond-list .week.respond-list:last-child .day.respond-list {
-  border-bottom: 0;
-}
-
-.respond-calendar.respond-list .header.respond-list span.respond-list {
-  display: block;
-		  		box-sizing: border-box;
-		        width: 14.28571428571429%;
-		        font-size: 0.8em;
-		  		background-color: #ccc;
-		        float: left;
-		        color: #fff;
-				height: 25px;
-				line-height: 25px;
-		  		text-align: center;
-		        cursor: pointer;
-}
-
-.respond-calendar.respond-list .day.respond-list {
-  background-color: #f8f8f8;
-}
-
-.respond-calendar.respond-list .day.active.respond-list {
-  background-color: #fff;
-}
-
-.respond-calendar.respond-list .day.respond-list .day-number.respond-list {
-  position: absolute;
-		  			top: 0;
-		  			left: 0;
-		  			color: #222;
-		  			text-align: center;
-		  			line-height: 30px;
-		  			width: 30px;
-		  			height: 30px;
-		  			border-right: 1px solid #f0f0f0;
-		  			border-bottom: 1px solid #f0f0f0;
-		  			color: #ccc;
-}
-
-.respond-calendar.respond-list .day.active.respond-list .day-number.respond-list {
-  background-color: #fff;
-		  			border-right: 1px solid #ddd;
-		  			border-bottom: 1px solid #ddd;
-		  			color: #222;
-}
-
-.respond-calendar.respond-list .day.today.respond-list .day-number.respond-list {
-  background-color: #CBE86B;
-		  			border-right: 1px solid #CBE86B;
-		  			border-bottom: 1px solid #CBE86B;
-		      		color: #fff;
-}
-
-.respond-calendar.respond-list .event.respond-list {
-  margin: 0 5px 5px 5px;
-			  	padding: 0 0 5px 0;
-			  	border-bottom: 1px solid #f0f0f0;
-}
-
-.respond-calendar.respond-list .event.respond-list:last-child {
-  border-bottom: none;
-}
-
-.respond-calendar.respond-list .event.respond-list h4.respond-list {
-  font-weight: normal;
-			  font-size: 14px;
-			  margin: 0 0 5px 0;
-			  padding: 0;
-}
-
-.respond-calendar.respond-list .event.respond-list h5.respond-list {
-  color: #aaa;
-			      font-weight: normal;
-			      text-transform: uppercase;
-			      font-size: 12px;
-			 	  margin: 0;
-			      padding: 0;
-}</style><style scope="respond-list-item">respond-list-item:last-child .respond-list-item-container.respond-list-item {
-  border-bottom: 1px solid #ddd;
-}
-
-.respond-list-item-container.respond-list-item {
-  position: relative;
-		  	border-top: 1px solid #ddd;
-		  	border-left: 1px solid #ddd;
-		  	border-right: 1px solid #ddd;
-		  	padding: 10px;
-}
-
-.respond-list-item-container.respond-list-item h4.respond-list-item, .respond-list-item-container.respond-list-item h5.respond-list-item, .respond-list-item-container.respond-list-item p.respond-list-item {
-  margin: 0 0 5px 0;
-		  	padding: 0;
-}
-
-.respond-list-item-container.respond-list-item p.respond-list-item {
-  margin-bottom: 0;
-}
-
-.respond-list-item-container.respond-list-item a.respond-list-item, .respond-list-item-container.respond-list-item a.respond-list-item:visited, .respond-list-item-container.respond-list-item a.respond-list-item:hover {
-  text-decoration: none;
-}
-
-.respond-list-item-container.respond-list-item img.respond-list-item {
-  position: absolute;
-		  	top: 10px;
-		  	left: 10px;
-		  	width: 100px;
-}
-
-.respond-list-item-container.has-image.respond-list-item {
-  padding-left: 120px;
-		  	min-height: 120px;
-}
-
-.respond-thumbnail.respond-list-item {
-  vertical-align: top;
-			display: inline-block;
-			width: 200px;
-			height: 235px;
-		  	position: relative;
-		  	border: 1px solid #f0f0f0;
-		  	padding: 0;
-		  	margin: 0 10px 10px 0;
-}
-
-.respond-thumbnail.respond-list-item h4.respond-list-item, .respond-thumbnail.respond-list-item h5.respond-list-item {
-  margin: 0 0 5px 0;
-		  	padding: 0;
-}
-
-.respond-thumbnail.respond-list-item a.respond-list-item, .respond-thumbnail.respond-list-item a.respond-list-item:visited, .respond-thumbnail.respond-list-item a.respond-list-item:hover {
-  text-decoration: none;
-}
-
-.respond-thumbnail.respond-list-item img.respond-list-item {
-  position: absolute;
-		  	top: 5px;
-		  	left: 5px;
-		  	width: 190px;
-		  	height: 190px;
-}
-
-.respond-thumbnail.respond-list-item h4.respond-list-item {
-  margin-top: 7px;
-			text-align: center;
-			font-size: 14px;
-			position: absolute;
-			left: 0;
-			bottom: 0;
-			width: 190px;
-			padding: 5px 0;
-			margin: 0;
-}
-
-.respond-thumbnail.respond-list-item h5.respond-list-item {
-  background-color: #888;
-			color: #fff;
-			position: absolute;
-			left: 5px;
-			bottom: 30px;
-			padding: 5px 0;
-			margin: 0;
-			width: 190px;
-			text-align: center;
-			font-size: 13px;
-			font-weight: normal;
-}
-
-html[dir=rtl].respond-list-item .respond-list-item-container.has-image[style-scope=respond-list-item].respond-list-item {
-  padding-left: 10px;
-		    padding-right: 120px;
-}
-
-html[dir=rtl].respond-list-item .respond-list-item-container[style-scope=respond-list-item].respond-list-item img[style-scope=respond-list-item].respond-list-item {
-  left: auto;    right: 10px;
-}</style><style scope="respond-search-toggle">.toggle.respond-search-toggle {
-  display: none;
-}
-
-.toggle.respond-search-toggle svg.respond-search-toggle {
-  width: 25px ;
-			    height: 25px;
-			  	margin: 0;
-			  	padding: 0;
-			  	line-height: 25px;
-			  	display: inline-block;
-			  	vertical-align: middle;
-			  	text-align: center;
-			  	fill: currentColor;
-}
-
-.toggle[visible].respond-search-toggle {
-  display: block;
-}</style><style scope="respond-search">.respond-search-container.respond-search {
-  position: fixed;
-		  	top: 0;
-		  	left: 0;
-		  	width: 100%;
-		  	padding: 0;
-		  	z-index: 100;
-		  	text-align: left;
-		  	margin-top: -400px;
-		  	z-index: 5;
-		  	background-color: #fff;
-		  	z-index: 10000;
-			transition: .35s all ease;
-			box-shadow: 1px 2px 3px rgba(119,119,119,0.25);
-}
-
-.respond-search-container[visible].respond-search {
-  margin-top: 0;
-}
-
-.respond-search-container.respond-search svg.respond-search {
-  width: 25px;
-			    height: 25px;
-			  	margin: 0;
-			  	padding: 0;
-			  	line-height: 25px;
-			  	display: inline-block;
-			  	vertical-align: middle;
-			  	fill: currentColor;
-}
-
-.respond-search-container.respond-search .close-search.respond-search {
-  height: 40px;
-			width: 40px;
-			text-align: center;
-			color: #ccc;
-			position: absolute;
-			top: 15px;
-			right: 10px;
-		  	background: none;
-		  	border: none;
-		  	outline: none;
-		  	z-index: 10;
-}
-
-.respond-search-container.respond-search .search-loading.respond-search {
-  text-align: center;
-			position: absolute;
-			top: 15px;
-			right: 100px;
-		  	background: none;
-		  	border: none;
-		  	outline: none;
-		  	z-index: 10;
-		  	display: none;
-		  	color: #888;
-			vertical-align: top;
-			width: 25px;
-			height: 25px;
-			margin-top: 8px;
-			margin-right: 5px;
-}
-
-.respond-search-container.respond-search .search-loading[visible].respond-search {
-  display: block;
-}
-
-.respond-search-container.respond-search .search-loading.respond-search svg.respond-search {
-  display: block;
-				vertical-align: top;
-				width: 25px;
-			    height: 25px;
-			  	margin: 0;
-			  	padding: 0;
-			  	line-height: 25px;
-			  	display: inline-block;
-			  	vertical-align: middle;
-			  	text-align: center;
-			  	fill: currentColor;
-}
-
-.respond-search-container.respond-search .search-container.respond-search {
-  position: relative;
-		  	display: block;
-		  	box-sizing: border-box;
-		  	margin: 10px 10px 10px 10px;
-}
-
-.respond-search-container.respond-search form.respond-search {
-  padding: 5px;
-		  	background-color: #fff;
-		    border-bottom: 1px solid #ddd;
-}
-
-.respond-search-container.respond-search input.respond-search {
-		  	font-size: 15px;
-			background-color: #fff;
-		  	width: calc(100% - 50px);
-		  	border: 1px solid #ddd;
-		  	height: 40px !important;
-		  	line-height: 40px;
-		  	outline: none;
-		  	text-indent: 10px;
-}
-
-.respond-search-container.respond-search .search-container.respond-search button.search.respond-search {
-  position: absolute;
-		  	top: 0;
-		  	right: 50px;
-		  	margin: 0;
-		  	padding: 0 10px;
-		  	background: none;
-		  	border: none;
-		  	color: #ccc;
-		  	height: 40px;
-		  	line-height: 40px;
-		  	outline: none;
-}
-
-.respond-search-container.respond-search h4.respond-search {
-  font-size: 15px;
-		  	line-height: auto;
-		  	margin: 0;
-		  	padding: 10px 10px 2px 10px;
-}
-
-.respond-search-container.respond-search small.respond-search {
-  font-size: 11px;
-		  	margin: 0;
-		  	padding: 0 10px 2px 10px;
-}
-
-.respond-search-container.respond-search p.respond-search {
-  font-size: 13px;
-		  	line-height: 19px;
-		  	margin: 0;
-		  	padding: 0 10px 10px 10px;
-}
-
-.respond-search-container-results.respond-search {
-  max-height: 275px;
-		  	overflow: auto;
-		  	display: none;
-}
-
-.respond-search-container-results[visible].respond-search {
-  display: block;
-}
-
-.respond-search-container.respond-search ul.respond-search {
-  margin: 0;
-		  	padding: 0;
-}
-
-.respond-search-container.respond-search li.respond-search {
-  font-size: 13px;
-		  	list-style: none;
-		  	text-align: left;
-		  	margin: 0;
-		  	padding: 5px;
-		  	border-bottom: 1px solid #ddd;
-}
-
-.respond-search-container.respond-search li.respond-search p.respond-search {
-  overflow: hidden;
-		  	text-overflow: ellipsis;
-		  	margin-bottom: 0 !important;
-}
-
-.respond-search-container.respond-search li.has-image.respond-search a.respond-search {
-  min-height: 70px;
-}
-
-.respond-search-container.respond-search li.respond-search img.respond-search {
-  float: left;
-		  	width: 50px;
-		  	height: 50px;
-		  	margin-right: 10px;
-		  	margin-top: 5px;
-}
-
-.respond-search-container.respond-search li.searching.respond-search, 
-		.respond-search-container.respond-search li.no-results.respond-search {
-  padding: 10px 20px;
-		    border-top: none;
-}
-
-.respond-search-container.respond-search li.searching.respond-search i.respond-search {
-  color: config(--search-text-color);
-}
-
-.respond-search-container.respond-search li.respond-search:last-child {
-  border-bottom: none;
-}
-
-.respond-search-container.respond-search li.no-results.respond-search {
-  display: none;
-}
-
-.respond-search-container.respond-search li.no-results[visible].respond-search {
-  display: block;
-}
-
-.respond-search-container[dir="rtl"].respond-search .search-container.respond-search button.search.respond-search {
-  right: auto;
-			left: 50px;
-}
-
-.respond-search-container[dir="rtl"].respond-search .close-search.respond-search {
-  right: auto;
-			left: 10px;
-}
-
-.respond-search-container[dir="rtl"].respond-search .search-container.respond-search input.respond-search {
-  margin-left: 50px;
-}</style><style scope="respond-form">.success.respond-form, .error.respond-form {
-  display: none;
-			background-color: #fff;
-			border: 1px solid #ddd;
-			padding: 10px 15px;
-			font-size: 16px;
-			margin: 0 0 0 15px;
-}
-
-.success[visible].respond-form, .error[visible].respond-form {
-  display: inline-block;
-}
-
-.error.respond-form {
-  border: 1px solid #CF4647;
-			color: #fff;
-			background-color: #CF4647;
-}
-
-.success.respond-form {
-  border: 1px solid #08B168;
-			color: #fff;
-			background-color: #08B168;
-}
-
-.loading.respond-form {
-  display: none;
-			color: #888;
-			vertical-align: top;
-			width: 25px;
-			height: 25px;
-			margin-top: 5px;
-			margin-left: 5px;
-}
-
-.loading[visible].respond-form {
-  display: inline-block;
-}
-
-.loading.respond-form svg.respond-form {
-  display: block;
-				vertical-align: top;
-				width: 25px;
-			    height: 25px;
-			  	margin: 0;
-			  	padding: 0;
-			  	line-height: 25px;
-			  	display: inline-block;
-			  	vertical-align: middle;
-			  	text-align: center;
-			  	fill: currentColor;
-}</style><style scope="respond-map">.respond-map.respond-map {
-  margin: 0 0 25px 0;
-		  	padding: 0;
-}
-
-.respond-map.respond-map .map-container.respond-map {
-  width: 100%;
-		  	height: 200px;
-		  	border: 1px solid #ddd;
-		  	margin-bottom: 5px;
-}
-
-.respond-map.respond-map p.respond-map {
-  margin: 0 0 5px 0;
-		  	padding: 0;
-}
-
-.respond-map.respond-map a.respond-map, .respond-map.respond-map a.respond-map:visited, .respond-map.respond-map a.respond-map:hover {
-  text-decoration: none;
-}</style><style scope="respond-video">.video-container.respond-video {
-  position: relative;
-		    padding-bottom: 56.25%;
-		    padding-top: 30px; 
-		    height: 0; 
-		    overflow: hidden;
-		    margin-bottom: 25px;
-}
-
-.video-container.respond-video iframe.respond-video,
-		.video-container.respond-video object.respond-video,
-		.video-container.respond-video embed.respond-video {
-  position: absolute;
-		    top: 0;
-		    left: 0;
-		    width: 100%;
-		    height: 100%;
-}</style><style scope="respond-slideshow">.carousel.respond-slideshow {
-  margin-bottom: 25px;
-}
-
-.carousel.fade.respond-slideshow {
-  opacity: 1;
-}
-
-.carousel.fade.respond-slideshow .item.respond-slideshow {
-  -moz-transition: opacity ease-in-out .7s;
-		    -o-transition: opacity ease-in-out .7s;
-		    -webkit-transition: opacity ease-in-out .7s;
-		    transition: opacity ease-in-out .7s;
-		    left: 0;
-		    opacity: 0;
-		    top:0;
-		    position:absolute;
-		    display:block;
-		    z-index:1;
-}
-
-.carousel.fade.respond-slideshow .item.respond-slideshow:first-child {
-  top:auto;
-		    position:relative;
-}
-
-.carousel.fade.respond-slideshow .item.active.respond-slideshow {
-  opacity: 1;
-		    -moz-transition: opacity ease-in-out .7s;
-		    -o-transition: opacity ease-in-out .7s;
-		    -webkit-transition: opacity ease-in-out .7s;
-		    transition: opacity ease-in-out .7s;
-		    z-index:2;
-}
-
-.carousel.fade.respond-slideshow .left.respond-slideshow, body.respond-slideshow .carousel.fade.respond-slideshow .right.respond-slideshow {
-  z-index: 10;
-}
-
-.carousel-control.respond-slideshow {
-  display: none;
-}
-
-.carousel-control[visible].respond-slideshow {
-  display: inline-block;
-}
-
-.carousel-control.respond-slideshow svg.respond-slideshow {
-  position: absolute;
-				top: 50%;
-				color: #fff;
-}
-
-.carousel-control.left.respond-slideshow svg.respond-slideshow {
-  left: 15px;
-}
-
-.carousel-control.right.respond-slideshow svg.respond-slideshow {
-  right: 15px;
-}
-
-.carousel-control.respond-slideshow svg.respond-slideshow {
-  width: 40px;
-				height: 40px;
-			  	margin: 0;
-			  	padding: 0;
-			  	line-height: 40px;
-			  	display: inline-block;
-			  	vertical-align: middle;
-			  	fill: currentColor;
-}
-
-.carousel-indicators.respond-slideshow {
-  display: none;	
-			bottom: 10px;
-			margin-bottom: 0;
-			padding-bottom: 0;
-}
-
-.carousel-indicators[visible].respond-slideshow {
-  display: inline-block;
-}
-
-.carousel-indicators.respond-slideshow li.respond-slideshow {
-  margin: 0 2.5px;
-}
-
-.carousel-caption.respond-slideshow {
-  bottom: 40px;
-			padding: 10px;
-			background-color: rgba(255,255,255,.8);
-}
-
-.carousel-caption.respond-slideshow h1.respond-slideshow {
-  font-size: 22px;
-				font-weight: bold;
-}
-
-.carousel-caption.respond-slideshow p.respond-slideshow {
-  font-size: 14px;
-}
-
-.carousel-caption.respond-slideshow h1.respond-slideshow, .carousel-caption.respond-slideshow p.respond-slideshow {
-  margin: 0 0 10px 0;
-				padding: 0;
-				line-height: auto;
-				text-shadow: none;
-}
-
-.carousel-caption.respond-slideshow p.respond-slideshow:last-child {
-  margin-bottom: 0;
-}</style><style scope="respond-cart-toggle">.toggle.respond-cart-toggle {
-  display: none;
-			position: relative;
-}
-
-.toggle.respond-cart-toggle svg.respond-cart-toggle {
-  width: 25px ;
-			    height: 25px;
-			  	margin: 0;
-			  	padding: 0;
-			  	line-height: 25px;
-			  	display: inline-block;
-			  	vertical-align: middle;
-			  	text-align: center;
-			  	fill: currentColor;
-}
-
-.toggle[visible].respond-cart-toggle {
-  display: block;
-}
-
-.count.respond-cart-toggle {
-  display: none;
-			top: 4px;
-			right: 4px;
-			position: absolute;
-			width: 20px;
-			height: 20px;
-			line-height: 20px;
-			background-color: #33B5E5;
-			color: #fff;
-			border-radius: 50%;
-			font-size: 12px;
-			margin: 0;
-			padding: 0;
-}
-
-.count[visible].respond-cart-toggle {
-  display: block;
-}</style><style scope="respond-cart">.respond-cart-container.respond-cart svg.respond-cart {
-  width: 25px;
-		    height: 25px;
-		  	margin: 0;
-		  	padding: 0;
-		  	line-height: 25px;
-		  	display: inline-block;
-		  	vertical-align: middle;
-			fill: currentColor;
-}
-
-.respond-cart-container.respond-cart {
-  position: fixed;
-		  	top: 0;
-		  	left: 0;
-		  	width: 100%;
-		  	padding: 0;
-		  	z-index: 100;
-		  	text-align: left;
-		  	margin-top: -400px;
-		  	z-index: 5;
-		  	background-color: #fff;
-		  	z-index: 10000;
-			transition: .35s all ease;
-			box-shadow: 1px 2px 3px rgba(119,119,119,0.25);
-			min-height: 350px;
-}
-
-.respond-cart[visible].respond-cart {
-  margin-top: 0;
-}
-
-.respond-cart-container.respond-cart .close-cart.respond-cart {
-  height: 40px;
-			width: 40px;
-			text-align: center;
-			color: #ccc;
-			position: absolute;
-			top: 5px;
-			right: 10px;
-		  	border: none;
-		  	outline: none;
-		  	z-index: 10;
-		  	background-color: #fff;
-}
-
-.respond-cart-container.respond-cart .cart-container.respond-cart {
-  height: 300px;
-			overflow: auto;
-}
-
-.respond-cart-container.respond-cart table.respond-cart {
-  border: none;
-			padding: 0;
-			margin: 50px 0 0 0;
-			width: 100%;
-			border-collapse: collapse;
-}
-
-.respond-cart-container.respond-cart table.respond-cart th.respond-cart {
-  font-weight: bold;
-}
-
-.respond-cart-container.respond-cart table.respond-cart th.respond-cart, .respond-cart-container.respond-cart table.respond-cart td.respond-cart {
-  padding: 5px;
-			margin: 0;
-			border-bottom: 1px solid #ddd;
-}
-
-.respond-cart-container.respond-cart table.respond-cart th.respond-cart small.respond-cart, .respond-cart-container.respond-cart table.respond-cart td.respond-cart small.respond-cart {
-  display: block;
-			color: #888;
-			text-transform: uppercase;
-}
-
-.respond-cart-container.respond-cart table.respond-cart th.respond-cart:first-child, .respond-cart-container.respond-cart table.respond-cart td.respond-cart:first-child {
-  padding-left: 10px;
-}
-
-.respond-cart-container.respond-cart table.respond-cart th.respond-cart:last-child, .respond-cart-container.respond-cart table.respond-cart td.respond-cart:last-child {
-  padding-right: 10px;
-}
-
-.respond-cart-container.respond-cart table.respond-cart th.number.respond-cart, .respond-cart-container.respond-cart table.respond-cart td.number.respond-cart {
-  text-align: right;
-}
-
-.respond-cart-container.respond-cart td.respond-cart button.respond-cart {
-  background-color: #fff;
-			border: 1px solid #ddd;
-			padding: 7px 10px;
-			margin: 0;
-			font-size: 16px;
-			outline: none;
-			font-size: 0.95em;
-			color: #777;
-			border: none;
-			color: #CF4647;
-}
-
-.respond-cart-container.respond-cart td.respond-cart button.remove.respond-cart {
-  margin: 0;
-			padding: 0;
-			width: 25px;
-}
-
-.respond-cart-container.respond-cart td.respond-cart button.remove.respond-cart svg.respond-cart {
-  margin-left: 0;
-}
-
-.respond-cart-container.respond-cart td.respond-cart input[type=number].respond-cart {
-  height: 36px;
-			line-height: 36px;
-			border: 1px solid #ddd;
-			width: 50px;
-			text-align: right;
-}
-
-.respond-cart-container.respond-cart table.respond-cart thead.respond-cart th.respond-cart {
-  background-color: #f0f0f0;
-			border-top: 1px solid #ddd;
-}
-
-.respond-cart-container.respond-cart .clear-cart.respond-cart {
-  position: absolute;
-			top: 22px;
-			left: 10px;
-		  	z-index: 10;
-		  	cursor: pointer;
-}
-
-.checkout.respond-cart {
-  position: absolute;
-			bottom: 0;
-			left: 0;
-			width: 100%;
-			text-align: right;
-			background-color: #f0f0f0;
-			border-top: 1px solid #ddd;
-}
-
-.checkout.respond-cart button.respond-cart {
-  background-color: #fff;
-			border: 1px solid #ddd;
-			padding: 10px 15px;
-			margin: 10px 10px 10px 0;
-			font-size: 15px;
-			outline: none;
-			text-transform: none;
-}
-
-.checkout.respond-cart button.respond-cart i.respond-cart {
-  color: #009cde;
-}
-
-.checkout.respond-cart a.respond-cart {
-  cursor: pointer;
-			position: absolute;
-			top: 19px;
-			left: 10px;
-			text-transform: none;
-}
-
-.checkout.respond-cart .total.respond-cart {
-  display: none;
-}
-
-.checkout.respond-cart .total.respond-cart span.respond-cart {
-  color: #888;
-			margin-right: 5px;
-			font-weight: normal;
-}
-
-.respond-cart-container.respond-cart svg.respond-cart {
-  margin-left: 10px;
-			color: #aaa;
-			height: 20px !important;
-}
-
-.tax.respond-cart, .shipping.respond-cart, .local-shipping.respond-cart {
-  display: none;
-}
-
-.tax[visible].respond-cart, .shipping[visible].respond-cart, .local-shipping[visible].respond-cart {
-  display: block;
-}
-
-@media (min-width: 768px) {
-.checkout.respond-cart .total.respond-cart {
-  display: inline-block;
-}
-
-}</style><style scope="respond-languages-toggle">.toggle.respond-languages-toggle {
-  display: none;
-}
-
-.toggle.respond-languages-toggle svg.respond-languages-toggle {
-  width: 25px ;
-			    height: 25px;
-			  	margin: 0;
-			  	padding: 0;
-			  	line-height: 25px;
-			  	display: inline-block;
-			  	vertical-align: middle;
-			  	text-align: center;
-			  	fill: currentColor;
-}
-
-.toggle[visible].respond-languages-toggle {
-  display: block;
-}</style><style scope="respond-shelf">.respond-shelf.respond-shelf {
-  margin-bottom: 25px;
-			border-top: 1px solid #f0f0f0;
-}</style><style scope="respond-shelf-item">table.respond-shelf-item {
-  width: 100%;
-	    	border-bottom: 1px solid #f0f0f0;
-}
-
-td.respond-shelf-item {
-  padding: 10px 5px;
-}
-
-td.respond-shelf-item:first-child {
-  padding-left: 0;
-}
-
-td.respond-shelf-item:last-child {
-  padding-right: 0;
-}
-
-td.respond-shelf-item small.respond-shelf-item {
-  display: block;
-}
-
-button.respond-shelf-item {
-  display: inline-block;
-			background-color: #fff;
-			border: 1px solid #ddd;
-			padding: 10px 10px;
-			margin: 0;
-			font-size: 16px;
-			outline: none;
-			font-size: 0.95em;
-			color: #777;
-}
-
-input[type=number].respond-shelf-item {
-  height: 36px;
-			line-height: 36px;
-			border: 1px solid #ddd;
-			width: 50px;
-			text-align: right;
-}
-
-.price.respond-shelf-item {
-  text-align: right;
-			width: 100px;
-}
-
-.quantity.respond-shelf-item {
-  text-align: right;
-			width: 50px;
-}
-
-.action.respond-shelf-item {
-  text-align: right;
-			width: 150px;
-}
-
-core-icon.respond-shelf-item {
-  margin-left: 10px;
-			color: #aaa;
-			height: 20px !important;
-}
-
-.sku.respond-shelf-item, .shipping.respond-shelf-item {
-  display: none;
-}
-
-.sku[visible].respond-shelf-item, .shipping[visible].respond-shelf-item {
-  display: block;
-}</style><style scope="respond-receipt">table.respond-receipt {
-  width: 100%;
-	  		border: none;
-	  		border-collapse: collapse;
-}
-
-table.respond-receipt thead.respond-receipt th.respond-receipt {
-  border-bottom: 1px solid #ddd;
-}
-
-table.respond-receipt tbody.respond-receipt td.respond-receipt {
-  border-bottom: 1px solid #f0f0f0;
-}
-
-table.respond-receipt tbody.respond-receipt tr.respond-receipt:last-child td.respond-receipt {
-  border-bottom: none;
-}
-
-table.respond-receipt thead.respond-receipt th.respond-receipt {
-  font-weight: bold;
-	  		text-align: left;
-}
-
-table.respond-receipt thead.respond-receipt th.text-right.respond-receipt, table.respond-receipt tbody.respond-receipt td.text-right.respond-receipt {
-  text-align: right;
-}</style><style scope="respond-languages">.respond-languages-container.respond-languages {
-  position: fixed;
-		  	top: 0;
-		  	left: 0;
-		  	width: 100%;
-		  	padding: 0;
-		    text-transform: uppercase;
-		  	z-index: 100;
-		  	text-align: left;
-		  	margin-top: -400px;
-		  	z-index: 5;
-		  	background-color: #fff;
-		  	z-index: 10000;
-		  	min-height: 70px;
-		  	line-height: auto;
-			transition: .35s all ease;
-			box-shadow: 1px 2px 3px rgba(119,119,119,0.25);
-}
-
-.respond-languages-container[visible].respond-languages {
-  margin-top: 0;
-}
-
-.respond-languages-container.respond-languages svg.respond-languages {
-  width: 25px;
-			    height: 25px;
-			  	margin: 0;
-			  	padding: 0;
-			  	line-height: 25px;
-			  	display: inline-block;
-			  	vertical-align: middle;
-			  	fill: currentColor;
-}
-
-.respond-languages-container.respond-languages .close-languages.respond-languages {
-  height: 40px;
-			width: 40px;
-			text-align: center;
-			color: #ccc;
-			position: absolute;
-			top: 15px;
-			right: 10px;
-		  	background: none;
-		  	border: none;
-		  	outline: none;
-		  	z-index: 10;
-}
-
-.languages-loading.respond-languages {
-  display: none;
-			color: #888;
-			vertical-align: top;
-			width: 25px;
-			height: 25px;
-			margin-top: 0;
-			margin-left: 5px;
-}
-
-.languages-loading[visible].respond-languages {
-  display: inline-block;
-}
-
-.languages-loading.respond-languages svg.respond-languages {
-  display: block;
-				vertical-align: top;
-				width: 25px;
-			    height: 25px;
-			  	margin: 0;
-			  	padding: 0;
-			  	line-height: 25px;
-			  	display: inline-block;
-			  	vertical-align: middle;
-			  	text-align: center;
-			  	fill: currentColor;
-}
-
-.select-language.respond-languages {
-  display: inline-block;
-		    padding-left: 15px;
-		    height: 70px;
-		    line-height: 70px;
-}
-
-.select-language.respond-languages label.respond-languages {
-  display: none;
-		    margin-right: 5px;
-			height: 50px;
-			line-height: 50px;
-			font-size: 0.95em;
-}
-
-.select-language.respond-languages label.direction.respond-languages {
-  margin-left: 15px;
-}
-
-.select-language.respond-languages a[active].respond-languages {
-  background-color: #f0f0f0;
-}
-
-@media (min-width: 600px) {
-.select-language.respond-languages label.respond-languages {
-  display: inline-block;
-}
-
-}</style><style scope="respond-gallery">.gallery.respond-gallery {
-  margin-bottom: 25px;
-}
-
-.gallery.respond-gallery a.respond-gallery {
-  display: inline-block;
-			width: 200px;
-			height: 200px;
-			margin: 0 10px 10px 0;
-}
-
-.gallery.respond-gallery a.respond-gallery img.respond-gallery {
-  width: 200px;
-			height: 200px;
-}</style><style scope="respond-share">.respond-share.respond-share {
-  margin-bottom: 25px;
-}
-
-.respond-share.respond-share span.respond-share {
-  display: none;
-			vertical-align: top;
-			margin-right: 10px;
-}
-
-.respond-share.respond-share span[visible].respond-share {
-  display: inline-block;
-}</style><style scope="respond-badge">.respond-badge.respond-badge {
-  margin-bottom: 25px;
-}
-
-.respond-badge.respond-badge a.respond-badge {
-  display: none;
-			vertical-align: top;
-			margin-right: 10px;
-			width: 40px;
-			height: 40px;
-			line-height: 40px;
-			font-size: 20px;
-			text-align: center;
-			border: 1px solid #ddd;
-			border-radius: 50%;
-			color: #888;
-			background-color: #fff;
-}
-
-.respond-badge.respond-badge a[visible].respond-badge {
-  display: inline-block;
-}
-
-.respond-badge.colorful.respond-badge a.badge-facebook.respond-badge {
-  border: 1px solid #fff;
-			color: #fff;
-			background-color: #3b5998;
-}
-
-.respond-badge.colorful.respond-badge a.badge-twitter.respond-badge {
-  border: 1px solid #fff;
-			color: #fff;
-			background-color: #4099ff;
-}
-
-.respond-badge.colorful.respond-badge a.badge-github.respond-badge {
-  border: 1px solid #fff;
-			color: #fff;
-			background-color: #333;
-}
-
-.respond-badge.colorful.respond-badge a.badge-pinterest.respond-badge {
-  border: 1px solid #fff;
-			color: #fff;
-			background-color: #c92228;
-}
-
-.respond-badge.colorful.respond-badge a.badge-tumblr.respond-badge {
-  border: 1px solid #fff;
-			color: #fff;
-			background-color: #35465c;
-}
-
-.respond-badge.colorful.respond-badge a.badge-youtube.respond-badge {
-  border: 1px solid #fff;
-			color: #fff;
-			background-color: #dc2725;
-}
-
-.respond-badge.colorful.respond-badge a.badge-googleplus.respond-badge {
-  border: 1px solid #fff;
-			color: #fff;
-			background-color: #df4b38;
-}
-
-.respond-badge.colorful.respond-badge a.badge-linkedin.respond-badge {
-  border: 1px solid #fff;
-			color: #fff;
-			background-color: #0077b5;
-}
-
-.respond-badge.colorful.respond-badge a.badge-instagram.respond-badge {
-  border: 1px solid #fff;
-			color: #fff;
-			background-color: #2e5e86;
-}</style><style scope="respond-comments">.respond-comments-container.respond-comments {
-  margin-bottom: 25px;
-}
-
-.respond-comments-container.respond-comments>div.respond-comments {
-  display: none;
-}
-
-.respond-comments-container.respond-comments>div[visible].respond-comments {
-  display: block;
-}</style><style>body {transition: opacity ease-in 0.2s; } 
-body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relative; } 
 </style>
-    
-    <title>Blog</title>
-	
-    <!-- meta -->
-    <meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="description" content="Your blog contains a list of your blog posts">
-	<meta name="keywords" content="">
-	
-	<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
-    
-    <!-- set base for HTML5 mode -->
-    <!--<base href="">--><base href=".">
-    
-    <!-- icons -->
-    <link rel="icon" href="">
-	<meta name="msapplication-TileColor" content="#FFFFFF">
-    <meta name="msapplication-TileImage" content="">
-    <meta name="theme-color" content="#FFFFFF">
-    <link rel="apple-touch-icon" href="">
-          
-    <!-- font -->
-	<link href="./Blog_files/css" rel="stylesheet" type="text/css">
-	<link type="text/css" href="./Blog_files/font-awesome.css" rel="stylesheet">
-    
-	<!-- css -->
-    <link type="text/css" href="./Home_files/libs.min.css" rel="stylesheet">
-	<link type="text/css" href="./Home_files/respond.min.css" rel="stylesheet">
-    
-    <!-- js -->
-    <script id="facebook-jssdk" src="./Blog_files/sdk.js"></script><script src="./Blog_files/js"></script><style type="text/css"></style><script src="./Blog_files/main.js"></script>
-    <script src="./Blog_files/respond.site.js"></script>
-    
-    <!-- web components -->
-    <script src="./Blog_files/webcomponents-lite.min.js"></script>
+<style scope="robo-list">
+.list-actions.robo-list {
+	margin: 15px 0 25px 0;
+	padding: 0;
+	vertical-align: top;
+}
 
-  <style type="text/css">.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow-x:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}.fb_link img{border:none}
-.fb_dialog{background:rgba(82, 82, 82, .7);position:absolute;top:-10000px;z-index:10001}.fb_reset .fb_dialog_legacy{overflow:visible}.fb_dialog_advanced{padding:10px;-moz-border-radius:8px;-webkit-border-radius:8px;border-radius:8px}.fb_dialog_content{background:#fff;color:#333}.fb_dialog_close_icon{background:url(https://static.xx.fbcdn.net/rsrc.php/v2/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;_background-image:url(https://static.xx.fbcdn.net/rsrc.php/v2/yL/r/s816eWC-2sl.gif);cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px}.fb_dialog_mobile .fb_dialog_close_icon{top:5px;left:5px;right:auto}.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}.fb_dialog_close_icon:hover{background:url(https://static.xx.fbcdn.net/rsrc.php/v2/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent;_background-image:url(https://static.xx.fbcdn.net/rsrc.php/v2/yL/r/s816eWC-2sl.gif)}.fb_dialog_close_icon:active{background:url(https://static.xx.fbcdn.net/rsrc.php/v2/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent;_background-image:url(https://static.xx.fbcdn.net/rsrc.php/v2/yL/r/s816eWC-2sl.gif)}.fb_dialog_loader{background-color:#f6f7f8;border:1px solid #606060;font-size:24px;padding:20px}.fb_dialog_top_left,.fb_dialog_top_right,.fb_dialog_bottom_left,.fb_dialog_bottom_right{height:10px;width:10px;overflow:hidden;position:absolute}.fb_dialog_top_left{background:url(https://static.xx.fbcdn.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 0;left:-10px;top:-10px}.fb_dialog_top_right{background:url(https://static.xx.fbcdn.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 -10px;right:-10px;top:-10px}.fb_dialog_bottom_left{background:url(https://static.xx.fbcdn.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 -20px;bottom:-10px;left:-10px}.fb_dialog_bottom_right{background:url(https://static.xx.fbcdn.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 -30px;right:-10px;bottom:-10px}.fb_dialog_vert_left,.fb_dialog_vert_right,.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{position:absolute;background:#525252;filter:alpha(opacity=70);opacity:.7}.fb_dialog_vert_left,.fb_dialog_vert_right{width:10px;height:100%}.fb_dialog_vert_left{margin-left:-10px}.fb_dialog_vert_right{right:0;margin-right:-10px}.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{width:100%;height:10px}.fb_dialog_horiz_top{margin-top:-10px}.fb_dialog_horiz_bottom{bottom:0;margin-bottom:-10px}.fb_dialog_iframe{line-height:0}.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #3a5795;color:#fff;font-size:14px;font-weight:bold;margin:0}.fb_dialog_content .dialog_title>span{background:url(https://static.xx.fbcdn.net/rsrc.php/v2/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}body.fb_hidden{-webkit-transform:none;height:100%;margin:0;overflow:visible;position:absolute;top:-10000px;left:0;width:100%}.fb_dialog.fb_dialog_mobile.loading{background:url(https://static.xx.fbcdn.net/rsrc.php/v2/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}.fb_dialog.fb_dialog_mobile.loading.centered{width:auto;height:auto;min-height:initial;min-width:initial;background:none}.fb_dialog.fb_dialog_mobile.loading.centered #fb_dialog_loader_spinner{width:100%}.fb_dialog.fb_dialog_mobile.loading.centered .fb_dialog_content{background:none}.loading.centered #fb_dialog_loader_close{color:#fff;display:block;padding-top:20px;clear:both;font-size:18px}#fb-root #fb_dialog_ipad_overlay{background:rgba(0, 0, 0, .45);position:absolute;left:0;top:0;width:100%;min-height:100%;z-index:10000}#fb-root #fb_dialog_ipad_overlay.hidden{display:none}.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}.fb_dialog_content .dialog_header{-webkit-box-shadow:white 0 1px 1px -1px inset;background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#738ABA), to(#2C4987));border-bottom:1px solid;border-color:#1d4088;color:#fff;font:14px Helvetica, sans-serif;font-weight:bold;text-overflow:ellipsis;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0;vertical-align:middle;white-space:nowrap}.fb_dialog_content .dialog_header table{-webkit-font-smoothing:subpixel-antialiased;height:43px;width:100%}.fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;width:60px}.fb_dialog_content .dialog_header td.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width:60px}.fb_dialog_content .touchable_button{background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#4966A6), color-stop(.5, #355492), to(#2A4887));border:1px solid #2f477a;-webkit-background-clip:padding-box;-webkit-border-radius:3px;-webkit-box-shadow:rgba(0, 0, 0, .117188) 0 1px 1px inset, rgba(255, 255, 255, .167969) 0 1px 0;display:inline-block;margin-top:3px;max-width:85px;line-height:18px;padding:4px 12px;position:relative}.fb_dialog_content .dialog_header .touchable_button input{border:none;background:none;color:#fff;font:12px Helvetica, sans-serif;font-weight:bold;margin:2px -12px;padding:2px 6px 3px 6px;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:16px;font-weight:bold;line-height:18px;text-align:center;vertical-align:middle}.fb_dialog_content .dialog_content{background:url(https://static.xx.fbcdn.net/rsrc.php/v2/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #555;border-bottom:0;border-top:0;height:150px}.fb_dialog_content .dialog_footer{background:#f6f7f8;border:1px solid #555;border-top-color:#ccc;height:40px}#fb_dialog_loader_close{float:left}.fb_dialog.fb_dialog_mobile .fb_dialog_close_button{text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}#fb_dialog_loader_spinner{animation:rotateSpinner 1.2s linear infinite;background-color:transparent;background-image:url(https://static.xx.fbcdn.net/rsrc.php/v2/yD/r/t-wz8gw1xG1.png);background-repeat:no-repeat;background-position:50% 50%;height:24px;width:24px}@keyframes rotateSpinner{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
-.fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_fluid_desktop,.fb_iframe_widget_fluid_desktop span,.fb_iframe_widget_fluid_desktop iframe{max-width:100%}.fb_iframe_widget_fluid_desktop iframe{min-width:220px;position:relative}.fb_iframe_widget_lift{z-index:1}.fb_hide_iframes iframe{position:relative;left:-10000px}.fb_iframe_widget_loader{position:relative;display:inline-block}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}.fb_iframe_widget_loader iframe{min-height:32px;z-index:2;zoom:1}.fb_iframe_widget_loader .FB_Loader{background:url(https://static.xx.fbcdn.net/rsrc.php/v2/y9/r/jKEcVPZFk-2.gif) no-repeat;height:32px;width:32px;margin-left:-16px;position:absolute;left:50%;z-index:4}</style><script type="text/javascript" charset="UTF-8" src="./Blog_files/common.js"></script><script type="text/javascript" charset="UTF-8" src="./Blog_files/util.js"></script><script type="text/javascript" charset="UTF-8" src="./Blog_files/stats.js"></script><script type="text/javascript" charset="UTF-8" src="./Blog_files/AuthenticationService.Authenticate"></script></head>
+.list-actions.robo-list .pager.robo-list {
+	margin: 0 15px 0 0;
+	padding: 0;
+	display: none;
+}
 
-  <!-- entry point for site -->
-  <body page="55ff2d16187e3" class="content"><respond-languages>
-	
-		<div class="respond-languages-container style-scope respond-languages">
-	
-			<button class="close-languages style-scope respond-languages"><svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" class="style-scope respond-languages"><g class="style-scope respond-languages"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" class="style-scope respond-languages"></path></g></svg></button>
-			
-			<div class="select-language style-scope respond-languages">
-				<label class="style-scope respond-languages">Language</label>
-				
-				<span class="languages-loading style-scope respond-languages">
-					 
-					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="style-scope respond-languages"><g class="style-scope respond-languages"><path opacity=".25" d="M16 0 A16 16 0 0 0 16 32 A16 16 0 0 0 16 0 M16 4 A12 12 0 0 1 16 28 A12 12 0 0 1 16 4" class="style-scope respond-languages"></path><path d="M16 0 A16 16 0 0 1 32 16 L28 16 A12 12 0 0 0 16 4z" class="style-scope respond-languages" transform="rotate(304.204 16 16)"><animatetransform attributeName="transform" type="rotate" from="0 16 16" to="360 16 16" dur="0.8s" repeatCount="indefinite" class="style-scope respond-languages"></animatetransform></path></g></svg>
-				</span>
-				
-				<div class="btn-group style-scope respond-languages">
-					<button type="button" class="btn btn-default dropdown-toggle style-scope respond-languages" data-toggle="dropdown" aria-expanded="false">
-						<span class="style-scope respond-languages">English</span> <span class="caret style-scope respond-languages"></span>
-					</button>
-					<ul class="dropdown-menu style-scope respond-languages" role="menu">
-						<template id="languagesList" is="dom-repeat" class="style-scope respond-languages"></template>
-					</ul>
-				</div>
-				
-				<label class="direction style-scope respond-languages">Direction</label>
-				
-				<div class="btn-group style-scope respond-languages">
-					<button type="button" class="btn btn-default dropdown-toggle style-scope respond-languages" data-toggle="dropdown" aria-expanded="false">
-						<span class="style-scope respond-languages">ltr</span> <span class="caret style-scope respond-languages"></span>
-					</button>
-					<ul class="dropdown-menu style-scope respond-languages" role="menu">
-						<li class="style-scope respond-languages"><a class="style-scope respond-languages" active="">LTR</a></li>
-						<li class="style-scope respond-languages"><a class="style-scope respond-languages">RTL</a></li>
-					</ul>
-				</div>
-				
-				
-				
-			</div>
-			
-		</div>
-	
-	</respond-languages>
-<respond-cart count="0">
-	
-		<div class="respond-cart-container style-scope respond-cart">
-		
-			<button class="close-cart style-scope respond-cart"><svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" class="style-scope respond-cart"><g class="style-scope respond-cart"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" class="style-scope respond-cart"></path></g></svg></button>
-			
-			<div class="cart-container style-scope respond-cart">
-			
-				<table class="style-scope respond-cart">
-					<thead class="style-scope respond-cart">
-						<tr class="style-scope respond-cart">
-							<th class="style-scope respond-cart">Item</th>
-							<th class="number style-scope respond-cart">Quantity</th>
-							<th class="number style-scope respond-cart">Price</th>
-							<th class="number style-scope respond-cart">Total</th>
-						</tr>
-					</thead>
-					<tbody class="style-scope respond-cart">
-				<template id="cartList" is="dom-repeat" class="style-scope respond-cart"></template>
-					</tbody><tfoot class="style-scope respond-cart">
-						<tr class="subtotal style-scope respond-cart">
-							<th colspan="3" class="style-scope respond-cart">Subtotal</th>
-							<td class="number style-scope respond-cart">$0.00 USD</td>
-						</tr>
-						<tr class="tax style-scope respond-cart">
-							<th colspan="3" class="style-scope respond-cart">Tax</th>
-							<td class="number style-scope respond-cart">$0.00 USD</td>
-						</tr>
-						<tr class="shipping style-scope respond-cart">
-							<th colspan="3" class="style-scope respond-cart">Shipping</th>
-							<td class="number style-scope respond-cart">$0.00 USD</td>
-						</tr>
-						<tr class="total style-scope respond-cart">
-							<th colspan="3" class="style-scope respond-cart">Total</th>
-							<td class="number style-scope respond-cart">$0.00 USD</td>
-						</tr>
-					</tfoot>
-				</table>
-				
-			</div>
-			
-					
-			<div class="checkout style-scope respond-cart">
-				
-				<a class="clear-cart style-scope respond-cart">Clear Cart</a>
-				
-				<span class="total style-scope respond-cart">
-					<span class="style-scope respond-cart">Total</span>
-					<span class="style-scope respond-cart">$0.00 USD</span>
-				</span>
-				
-				<button class="style-scope respond-cart"><span class="style-scope respond-cart">Checkout with Paypal</span></button>
-			</div>
-			
-		</div>
-	
-	</respond-cart>
-<respond-search>
-	
-		<div class="respond-search-container style-scope respond-search" dir="ltr">
-	
-			<button class="close-search style-scope respond-search"><svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" class="style-scope respond-search"><g class="style-scope respond-search"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" class="style-scope respond-search"></path></g></svg></button>
-			
-			<span class="search-loading style-scope respond-search" visible$="loading">
-				 
-					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="style-scope respond-search"><g class="style-scope respond-search"><path opacity=".25" d="M16 0 A16 16 0 0 0 16 32 A16 16 0 0 0 16 0 M16 4 A12 12 0 0 1 16 28 A12 12 0 0 1 16 4" class="style-scope respond-search"></path><path d="M16 0 A16 16 0 0 1 32 16 L28 16 A12 12 0 0 0 16 4z" class="style-scope respond-search" transform="rotate(304.204 16 16)"><animatetransform attributeName="transform" type="rotate" from="0 16 16" to="360 16 16" dur="0.8s" repeatCount="indefinite" class="style-scope respond-search"></animatetransform></path></g></svg>
+.list-actions.robo-list .pager[visible].robo-list {
+	display: inline-block;
+}
+
+.list-actions.robo-list button.robo-list {
+	font-size: 14px;
+	display: inline-block;
+	box-sizing: border-box;
+	background-color: #fff;
+	border: 1px solid #ddd;
+	padding: 0 15px;
+	font-size: 16px;
+	height: 45px;
+	line-height: 45px;
+	vertical-align: top;
+	outline: none;
+}
+
+.list-actions.robo-list a.robo-list {
+	display: inline-block;
+	box-sizing: border-box;
+	text-decoration: none;
+	background-color: #fff;
+	border: 1px solid #ddd;
+	padding: 0 15px;
+	margin: 0 1px;
+	font-size: 16px;
+	cursor: pointer;
+	height: 45px;
+	line-height: 45px;
+	vertical-align: top;
+}
+
+.list-actions.robo-list a[active].robo-list {
+	background-color: #f0f0f0;
+}
+
+.list-actions.robo-list button.robo-list {
+	display: none;
+}
+
+.list-actions.robo-list button[visible].robo-list {
+	display: inline-block;
+}
+
+.list-actions.robo-list svg.robo-list {
+	width: 25px;
+	height: 25px;
+	margin: 0;
+	padding: 0;
+	line-height: 25px;
+	display: inline-block;
+	vertical-align: middle;
+	fill: currentColor;
+}
+
+.robo-map.robo-list {
+	width: 100%;
+	height: 200px;
+	border: 1px solid #ddd;
+	margin-bottom: 20px;
+}
+
+.robo-calendar.robo-list {
+	margin: 0px 0px 20px 0px;
+	border: 1px solid #ddd;
+	overflow: hidden;
+}
+
+.robo-calendar.robo-list a.robo-list, .robo-calendar.robo-list a.robo-list:visited,
+	.robo-calendar.robo-list a.robo-list:hover {
+	text-decoration: none;
+}
+
+.robo-calendar.robo-list .header.robo-list, .robo-calendar.robo-list .week.robo-list
+	{
+	clear: both;
+	width: 100.1%;
+}
+
+.robo-calendar.robo-list .title.robo-list {
+	position: relative;
+	color: #aaa;
+	text-transform: uppercase;
+	font-size: 12px;
+	text-align: center;
+	padding: 10px 0;
+}
+
+.robo-calendar.robo-list .title.robo-list .prev.robo-list {
+	position: absolute;
+	top: 8px;
+	left: 10px;
+	font-size: 20px;
+	cursor: pointer;
+}
+
+.robo-calendar.robo-list .title.robo-list .next.robo-list {
+	position: absolute;
+	top: 8px;
+	right: 10px;
+	font-size: 20px;
+	cursor: pointer;
+}
+
+.robo-calendar.robo-list .week.robo-list {
+	height: 150px;
+	width: 100.1%;
+	display: block;
+}
+
+.robo-calendar.robo-list .day.robo-list {
+	position: relative;
+	display: block;
+	box-sizing: border-box;
+	margin: -1px 0 0 0;
+	padding: 35px 0 0 0;
+	width: 14.28%;
+	height: 150px;
+	text-align: left;
+	font-size: 0.8em;
+	color: #ddd;
+	float: left;
+	color: #888;
+	border-right: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+}
+
+.robo-calendar.robo-list .day.robo-list:nth-child(7) {
+	border-right: 0;
+}
+
+.robo-calendar.robo-list .week.robo-list:last-child .day.robo-list {
+	border-bottom: 0;
+}
+
+.robo-calendar.robo-list .header.robo-list span.robo-list {
+	display: block;
+	box-sizing: border-box;
+	width: 14.28571428571429%;
+	font-size: 0.8em;
+	background-color: #ccc;
+	float: left;
+	color: #fff;
+	height: 25px;
+	line-height: 25px;
+	text-align: center;
+	cursor: pointer;
+}
+
+.robo-calendar.robo-list .day.robo-list {
+	background-color: #f8f8f8;
+}
+
+.robo-calendar.robo-list .day.active.robo-list {
+	background-color: #fff;
+}
+
+.robo-calendar.robo-list .day.robo-list .day-number.robo-list {
+	position: absolute;
+	top: 0;
+	left: 0;
+	color: #222;
+	text-align: center;
+	line-height: 30px;
+	width: 30px;
+	height: 30px;
+	border-right: 1px solid #f0f0f0;
+	border-bottom: 1px solid #f0f0f0;
+	color: #ccc;
+}
+
+.robo-calendar.robo-list .day.active.robo-list .day-number.robo-list {
+	background-color: #fff;
+	border-right: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+	color: #222;
+}
+
+.robo-calendar.robo-list .day.today.robo-list .day-number.robo-list {
+	background-color: #CBE86B;
+	border-right: 1px solid #CBE86B;
+	border-bottom: 1px solid #CBE86B;
+	color: #fff;
+}
+
+.robo-calendar.robo-list .event.robo-list {
+	margin: 0 5px 5px 5px;
+	padding: 0 0 5px 0;
+	border-bottom: 1px solid #f0f0f0;
+}
+
+.robo-calendar.robo-list .event.robo-list:last-child {
+	border-bottom: none;
+}
+
+.robo-calendar.robo-list .event.robo-list h4.robo-list {
+	font-weight: normal;
+	font-size: 14px;
+	margin: 0 0 5px 0;
+	padding: 0;
+}
+
+.robo-calendar.robo-list .event.robo-list h5.robo-list {
+	color: #aaa;
+	font-weight: normal;
+	text-transform: uppercase;
+	font-size: 12px;
+	margin: 0;
+	padding: 0;
+}
+</style>
+<style scope="robo-list-item">
+robo-list-item:last-child .robo-list-item-container.robo-list-item {
+	border-bottom: 1px solid #ddd;
+}
+
+.robo-list-item-container.robo-list-item {
+	position: relative;
+	border-top: 1px solid #ddd;
+	border-left: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+	padding: 10px;
+}
+
+.robo-list-item-container.robo-list-item h4.robo-list-item,
+	.robo-list-item-container.robo-list-item h5.robo-list-item,
+	.robo-list-item-container.robo-list-item p.robo-list-item {
+	margin: 0 0 5px 0;
+	padding: 0;
+}
+
+.robo-list-item-container.robo-list-item p.robo-list-item {
+	margin-bottom: 0;
+}
+
+.robo-list-item-container.robo-list-item a.robo-list-item,
+	.robo-list-item-container.robo-list-item a.robo-list-item:visited,
+	.robo-list-item-container.robo-list-item a.robo-list-item:hover {
+	text-decoration: none;
+}
+
+.robo-list-item-container.robo-list-item img.robo-list-item {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	width: 100px;
+}
+
+.robo-list-item-container.has-image.robo-list-item {
+	padding-left: 120px;
+	min-height: 120px;
+}
+
+.robo-thumbnail.robo-list-item {
+	vertical-align: top;
+	display: inline-block;
+	width: 200px;
+	height: 235px;
+	position: relative;
+	border: 1px solid #f0f0f0;
+	padding: 0;
+	margin: 0 10px 10px 0;
+}
+
+.robo-thumbnail.robo-list-item h4.robo-list-item, .robo-thumbnail.robo-list-item h5.robo-list-item
+	{
+	margin: 0 0 5px 0;
+	padding: 0;
+}
+
+.robo-thumbnail.robo-list-item a.robo-list-item, .robo-thumbnail.robo-list-item a.robo-list-item:visited,
+	.robo-thumbnail.robo-list-item a.robo-list-item:hover {
+	text-decoration: none;
+}
+
+.robo-thumbnail.robo-list-item img.robo-list-item {
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	width: 190px;
+	height: 190px;
+}
+
+.robo-thumbnail.robo-list-item h4.robo-list-item {
+	margin-top: 7px;
+	text-align: center;
+	font-size: 14px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 190px;
+	padding: 5px 0;
+	margin: 0;
+}
+
+.robo-thumbnail.robo-list-item h5.robo-list-item {
+	background-color: #888;
+	color: #fff;
+	position: absolute;
+	left: 5px;
+	bottom: 30px;
+	padding: 5px 0;
+	margin: 0;
+	width: 190px;
+	text-align: center;
+	font-size: 13px;
+	font-weight: normal;
+}
+
+html[dir=rtl].robo-list-item .robo-list-item-container.has-image[style-scope=robo-list-item].robo-list-item
+	{
+	padding-left: 10px;
+	padding-right: 120px;
+}
+
+html[dir=rtl].robo-list-item .robo-list-item-container[style-scope=robo-list-item].robo-list-item img[style-scope=robo-list-item].robo-list-item
+	{
+	left: auto;
+	right: 10px;
+}
+</style>
+<style scope="robo-search-toggle">
+.toggle.robo-search-toggle {
+	display: none;
+}
+
+.toggle.robo-search-toggle svg.robo-search-toggle {
+	width: 25px;
+	height: 25px;
+	margin: 0;
+	padding: 0;
+	line-height: 25px;
+	display: inline-block;
+	vertical-align: middle;
+	text-align: center;
+	fill: currentColor;
+}
+
+.toggle[visible].robo-search-toggle {
+	display: block;
+}
+</style>
+<style scope="robo-search">
+.robo-search-container.robo-search {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 0;
+	z-index: 100;
+	text-align: left;
+	margin-top: -400px;
+	z-index: 5;
+	background-color: #fff;
+	z-index: 10000;
+	transition: .35s all ease;
+	box-shadow: 1px 2px 3px rgba(119, 119, 119, 0.25);
+}
+
+.robo-search-container[visible].robo-search {
+	margin-top: 0;
+}
+
+.robo-search-container.robo-search svg.robo-search {
+	width: 25px;
+	height: 25px;
+	margin: 0;
+	padding: 0;
+	line-height: 25px;
+	display: inline-block;
+	vertical-align: middle;
+	fill: currentColor;
+}
+
+.robo-search-container.robo-search .close-search.robo-search {
+	height: 40px;
+	width: 40px;
+	text-align: center;
+	color: #ccc;
+	position: absolute;
+	top: 15px;
+	right: 10px;
+	background: none;
+	border: none;
+	outline: none;
+	z-index: 10;
+}
+
+.robo-search-container.robo-search .search-loading.robo-search {
+	text-align: center;
+	position: absolute;
+	top: 15px;
+	right: 100px;
+	background: none;
+	border: none;
+	outline: none;
+	z-index: 10;
+	display: none;
+	color: #888;
+	vertical-align: top;
+	width: 25px;
+	height: 25px;
+	margin-top: 8px;
+	margin-right: 5px;
+}
+
+.robo-search-container.robo-search .search-loading[visible].robo-search
+	{
+	display: block;
+}
+
+.robo-search-container.robo-search .search-loading.robo-search svg.robo-search
+	{
+	display: block;
+	vertical-align: top;
+	width: 25px;
+	height: 25px;
+	margin: 0;
+	padding: 0;
+	line-height: 25px;
+	display: inline-block;
+	vertical-align: middle;
+	text-align: center;
+	fill: currentColor;
+}
+
+.robo-search-container.robo-search .search-container.robo-search {
+	position: relative;
+	display: block;
+	box-sizing: border-box;
+	margin: 10px 10px 10px 10px;
+}
+
+.robo-search-container.robo-search form.robo-search {
+	padding: 5px;
+	background-color: #fff;
+	border-bottom: 1px solid #ddd;
+}
+
+.robo-search-container.robo-search input.robo-search {
+	font-size: 15px;
+	background-color: #fff;
+	width: calc(100% - 50px);
+	border: 1px solid #ddd;
+	height: 40px !important;
+	line-height: 40px;
+	outline: none;
+	text-indent: 10px;
+}
+
+.robo-search-container.robo-search .search-container.robo-search button.search.robo-search
+	{
+	position: absolute;
+	top: 0;
+	right: 50px;
+	margin: 0;
+	padding: 0 10px;
+	background: none;
+	border: none;
+	color: #ccc;
+	height: 40px;
+	line-height: 40px;
+	outline: none;
+}
+
+.robo-search-container.robo-search h4.robo-search {
+	font-size: 15px;
+	line-height: auto;
+	margin: 0;
+	padding: 10px 10px 2px 10px;
+}
+
+.robo-search-container.robo-search small.robo-search {
+	font-size: 11px;
+	margin: 0;
+	padding: 0 10px 2px 10px;
+}
+
+.robo-search-container.robo-search p.robo-search {
+	font-size: 13px;
+	line-height: 19px;
+	margin: 0;
+	padding: 0 10px 10px 10px;
+}
+
+.robo-search-container-results.robo-search {
+	max-height: 275px;
+	overflow: auto;
+	display: none;
+}
+
+.robo-search-container-results[visible].robo-search {
+	display: block;
+}
+
+.robo-search-container.robo-search ul.robo-search {
+	margin: 0;
+	padding: 0;
+}
+
+.robo-search-container.robo-search li.robo-search {
+	font-size: 13px;
+	list-style: none;
+	text-align: left;
+	margin: 0;
+	padding: 5px;
+	border-bottom: 1px solid #ddd;
+}
+
+.robo-search-container.robo-search li.robo-search p.robo-search {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	margin-bottom: 0 !important;
+}
+
+.robo-search-container.robo-search li.has-image.robo-search a.robo-search
+	{
+	min-height: 70px;
+}
+
+.robo-search-container.robo-search li.robo-search img.robo-search {
+	float: left;
+	width: 50px;
+	height: 50px;
+	margin-right: 10px;
+	margin-top: 5px;
+}
+
+.robo-search-container.robo-search li.searching.robo-search,
+	.robo-search-container.robo-search li.no-results.robo-search {
+	padding: 10px 20px;
+	border-top: none;
+}
+
+.robo-search-container.robo-search li.searching.robo-search i.robo-search
+	{
+	color: config(- -search-text-color);
+}
+
+.robo-search-container.robo-search li.robo-search:last-child {
+	border-bottom: none;
+}
+
+.robo-search-container.robo-search li.no-results.robo-search {
+	display: none;
+}
+
+.robo-search-container.robo-search li.no-results[visible].robo-search {
+	display: block;
+}
+
+.robo-search-container[dir="rtl"].robo-search .search-container.robo-search button.search.robo-search
+	{
+	right: auto;
+	left: 50px;
+}
+
+.robo-search-container[dir="rtl"].robo-search .close-search.robo-search
+	{
+	right: auto;
+	left: 10px;
+}
+
+.robo-search-container[dir="rtl"].robo-search .search-container.robo-search input.robo-search
+	{
+	margin-left: 50px;
+}
+</style>
+<style scope="robo-form">
+.success.robo-form, .error.robo-form {
+	display: none;
+	background-color: #fff;
+	border: 1px solid #ddd;
+	padding: 10px 15px;
+	font-size: 16px;
+	margin: 0 0 0 15px;
+}
+
+.success[visible].robo-form, .error[visible].robo-form {
+	display: inline-block;
+}
+
+.error.robo-form {
+	border: 1px solid #CF4647;
+	color: #fff;
+	background-color: #CF4647;
+}
+
+.success.robo-form {
+	border: 1px solid #08B168;
+	color: #fff;
+	background-color: #08B168;
+}
+
+.loading.robo-form {
+	display: none;
+	color: #888;
+	vertical-align: top;
+	width: 25px;
+	height: 25px;
+	margin-top: 5px;
+	margin-left: 5px;
+}
+
+.loading[visible].robo-form {
+	display: inline-block;
+}
+
+.loading.robo-form svg.robo-form {
+	display: block;
+	vertical-align: top;
+	width: 25px;
+	height: 25px;
+	margin: 0;
+	padding: 0;
+	line-height: 25px;
+	display: inline-block;
+	vertical-align: middle;
+	text-align: center;
+	fill: currentColor;
+}
+</style>
+<style scope="robo-map">
+.robo-map.robo-map {
+	margin: 0 0 25px 0;
+	padding: 0;
+}
+
+.robo-map.robo-map .map-container.robo-map {
+	width: 100%;
+	height: 200px;
+	border: 1px solid #ddd;
+	margin-bottom: 5px;
+}
+
+.robo-map.robo-map p.robo-map {
+	margin: 0 0 5px 0;
+	padding: 0;
+}
+
+.robo-map.robo-map a.robo-map, .robo-map.robo-map a.robo-map:visited,
+	.robo-map.robo-map a.robo-map:hover {
+	text-decoration: none;
+}
+</style>
+<style scope="robo-video">
+.video-container.robo-video {
+	position: relative;
+	padding-bottom: 56.25%;
+	padding-top: 30px;
+	height: 0;
+	overflow: hidden;
+	margin-bottom: 25px;
+}
+
+.video-container.robo-video iframe.robo-video, .video-container.robo-video object.robo-video,
+	.video-container.robo-video embed.robo-video {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+</style>
+<style scope="robo-slideshow">
+.carousel.robo-slideshow {
+	margin-bottom: 25px;
+}
+
+.carousel.fade.robo-slideshow {
+	opacity: 1;
+}
+
+.carousel.fade.robo-slideshow .item.robo-slideshow {
+	-moz-transition: opacity ease-in-out .7s;
+	-o-transition: opacity ease-in-out .7s;
+	-webkit-transition: opacity ease-in-out .7s;
+	transition: opacity ease-in-out .7s;
+	left: 0;
+	opacity: 0;
+	top: 0;
+	position: absolute;
+	display: block;
+	z-index: 1;
+}
+
+.carousel.fade.robo-slideshow .item.robo-slideshow:first-child {
+	top: auto;
+	position: relative;
+}
+
+.carousel.fade.robo-slideshow .item.active.robo-slideshow {
+	opacity: 1;
+	-moz-transition: opacity ease-in-out .7s;
+	-o-transition: opacity ease-in-out .7s;
+	-webkit-transition: opacity ease-in-out .7s;
+	transition: opacity ease-in-out .7s;
+	z-index: 2;
+}
+
+.carousel.fade.robo-slideshow .left.robo-slideshow, body.robo-slideshow .carousel.fade.robo-slideshow .right.robo-slideshow
+	{
+	z-index: 10;
+}
+
+.carousel-control.robo-slideshow {
+	display: none;
+}
+
+.carousel-control[visible].robo-slideshow {
+	display: inline-block;
+}
+
+.carousel-control.robo-slideshow svg.robo-slideshow {
+	position: absolute;
+	top: 50%;
+	color: #fff;
+}
+
+.carousel-control.left.robo-slideshow svg.robo-slideshow {
+	left: 15px;
+}
+
+.carousel-control.right.robo-slideshow svg.robo-slideshow {
+	right: 15px;
+}
+
+.carousel-control.robo-slideshow svg.robo-slideshow {
+	width: 40px;
+	height: 40px;
+	margin: 0;
+	padding: 0;
+	line-height: 40px;
+	display: inline-block;
+	vertical-align: middle;
+	fill: currentColor;
+}
+
+.carousel-indicators.robo-slideshow {
+	display: none;
+	bottom: 10px;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+.carousel-indicators[visible].robo-slideshow {
+	display: inline-block;
+}
+
+.carousel-indicators.robo-slideshow li.robo-slideshow {
+	margin: 0 2.5px;
+}
+
+.carousel-caption.robo-slideshow {
+	bottom: 40px;
+	padding: 10px;
+	background-color: rgba(255, 255, 255, .8);
+}
+
+.carousel-caption.robo-slideshow h1.robo-slideshow {
+	font-size: 22px;
+	font-weight: bold;
+}
+
+.carousel-caption.robo-slideshow p.robo-slideshow {
+	font-size: 14px;
+}
+
+.carousel-caption.robo-slideshow h1.robo-slideshow, .carousel-caption.robo-slideshow p.robo-slideshow
+	{
+	margin: 0 0 10px 0;
+	padding: 0;
+	line-height: auto;
+	text-shadow: none;
+}
+
+.carousel-caption.robo-slideshow p.robo-slideshow:last-child {
+	margin-bottom: 0;
+}
+</style>
+<style scope="robo-cart-toggle">
+.toggle.robo-cart-toggle {
+	display: none;
+	position: relative;
+}
+
+.toggle.robo-cart-toggle svg.robo-cart-toggle {
+	width: 25px;
+	height: 25px;
+	margin: 0;
+	padding: 0;
+	line-height: 25px;
+	display: inline-block;
+	vertical-align: middle;
+	text-align: center;
+	fill: currentColor;
+}
+
+.toggle[visible].robo-cart-toggle {
+	display: block;
+}
+
+.count.robo-cart-toggle {
+	display: none;
+	top: 4px;
+	right: 4px;
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	line-height: 20px;
+	background-color: #33B5E5;
+	color: #fff;
+	border-radius: 50%;
+	font-size: 12px;
+	margin: 0;
+	padding: 0;
+}
+
+.count[visible].robo-cart-toggle {
+	display: block;
+}
+</style>
+<style scope="robo-cart">
+.robo-cart-container.robo-cart svg.robo-cart {
+	width: 25px;
+	height: 25px;
+	margin: 0;
+	padding: 0;
+	line-height: 25px;
+	display: inline-block;
+	vertical-align: middle;
+	fill: currentColor;
+}
+
+.robo-cart-container.robo-cart {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 0;
+	z-index: 100;
+	text-align: left;
+	margin-top: -400px;
+	z-index: 5;
+	background-color: #fff;
+	z-index: 10000;
+	transition: .35s all ease;
+	box-shadow: 1px 2px 3px rgba(119, 119, 119, 0.25);
+	min-height: 350px;
+}
+
+.robo-cart[visible].robo-cart {
+	margin-top: 0;
+}
+
+.robo-cart-container.robo-cart .close-cart.robo-cart {
+	height: 40px;
+	width: 40px;
+	text-align: center;
+	color: #ccc;
+	position: absolute;
+	top: 5px;
+	right: 10px;
+	border: none;
+	outline: none;
+	z-index: 10;
+	background-color: #fff;
+}
+
+.robo-cart-container.robo-cart .cart-container.robo-cart {
+	height: 300px;
+	overflow: auto;
+}
+
+.robo-cart-container.robo-cart table.robo-cart {
+	border: none;
+	padding: 0;
+	margin: 50px 0 0 0;
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.robo-cart-container.robo-cart table.robo-cart th.robo-cart {
+	font-weight: bold;
+}
+
+.robo-cart-container.robo-cart table.robo-cart th.robo-cart,
+	.robo-cart-container.robo-cart table.robo-cart td.robo-cart {
+	padding: 5px;
+	margin: 0;
+	border-bottom: 1px solid #ddd;
+}
+
+.robo-cart-container.robo-cart table.robo-cart th.robo-cart small.robo-cart,
+	.robo-cart-container.robo-cart table.robo-cart td.robo-cart small.robo-cart
+	{
+	display: block;
+	color: #888;
+	text-transform: uppercase;
+}
+
+.robo-cart-container.robo-cart table.robo-cart th.robo-cart:first-child,
+	.robo-cart-container.robo-cart table.robo-cart td.robo-cart:first-child
+	{
+	padding-left: 10px;
+}
+
+.robo-cart-container.robo-cart table.robo-cart th.robo-cart:last-child,
+	.robo-cart-container.robo-cart table.robo-cart td.robo-cart:last-child
+	{
+	padding-right: 10px;
+}
+
+.robo-cart-container.robo-cart table.robo-cart th.number.robo-cart,
+	.robo-cart-container.robo-cart table.robo-cart td.number.robo-cart {
+	text-align: right;
+}
+
+.robo-cart-container.robo-cart td.robo-cart button.robo-cart {
+	background-color: #fff;
+	border: 1px solid #ddd;
+	padding: 7px 10px;
+	margin: 0;
+	font-size: 16px;
+	outline: none;
+	font-size: 0.95em;
+	color: #777;
+	border: none;
+	color: #CF4647;
+}
+
+.robo-cart-container.robo-cart td.robo-cart button.remove.robo-cart {
+	margin: 0;
+	padding: 0;
+	width: 25px;
+}
+
+.robo-cart-container.robo-cart td.robo-cart button.remove.robo-cart svg.robo-cart
+	{
+	margin-left: 0;
+}
+
+.robo-cart-container.robo-cart td.robo-cart input[type=number].robo-cart
+	{
+	height: 36px;
+	line-height: 36px;
+	border: 1px solid #ddd;
+	width: 50px;
+	text-align: right;
+}
+
+.robo-cart-container.robo-cart table.robo-cart thead.robo-cart th.robo-cart
+	{
+	background-color: #f0f0f0;
+	border-top: 1px solid #ddd;
+}
+
+.robo-cart-container.robo-cart .clear-cart.robo-cart {
+	position: absolute;
+	top: 22px;
+	left: 10px;
+	z-index: 10;
+	cursor: pointer;
+}
+
+.checkout.robo-cart {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	text-align: right;
+	background-color: #f0f0f0;
+	border-top: 1px solid #ddd;
+}
+
+.checkout.robo-cart button.robo-cart {
+	background-color: #fff;
+	border: 1px solid #ddd;
+	padding: 10px 15px;
+	margin: 10px 10px 10px 0;
+	font-size: 15px;
+	outline: none;
+	text-transform: none;
+}
+
+.checkout.robo-cart button.robo-cart i.robo-cart {
+	color: #009cde;
+}
+
+.checkout.robo-cart a.robo-cart {
+	cursor: pointer;
+	position: absolute;
+	top: 19px;
+	left: 10px;
+	text-transform: none;
+}
+
+.checkout.robo-cart .total.robo-cart {
+	display: none;
+}
+
+.checkout.robo-cart .total.robo-cart span.robo-cart {
+	color: #888;
+	margin-right: 5px;
+	font-weight: normal;
+}
+
+.robo-cart-container.robo-cart svg.robo-cart {
+	margin-left: 10px;
+	color: #aaa;
+	height: 20px !important;
+}
+
+.tax.robo-cart, .shipping.robo-cart, .local-shipping.robo-cart {
+	display: none;
+}
+
+.tax[visible].robo-cart, .shipping[visible].robo-cart, .local-shipping[visible].robo-cart
+	{
+	display: block;
+}
+
+@media ( min-width : 768px) {
+	.checkout.robo-cart .total.robo-cart {
+		display: inline-block;
+	}
+}
+</style>
+<style scope="robo-languages-toggle">
+.toggle.robo-languages-toggle {
+	display: none;
+}
+
+.toggle.robo-languages-toggle svg.robo-languages-toggle {
+	width: 25px;
+	height: 25px;
+	margin: 0;
+	padding: 0;
+	line-height: 25px;
+	display: inline-block;
+	vertical-align: middle;
+	text-align: center;
+	fill: currentColor;
+}
+
+.toggle[visible].robo-languages-toggle {
+	display: block;
+}
+</style>
+<style scope="robo-shelf">
+.robo-shelf.robo-shelf {
+	margin-bottom: 25px;
+	border-top: 1px solid #f0f0f0;
+}
+</style>
+<style scope="robo-shelf-item">
+table.robo-shelf-item {
+	width: 100%;
+	border-bottom: 1px solid #f0f0f0;
+}
+
+td.robo-shelf-item {
+	padding: 10px 5px;
+}
+
+td.robo-shelf-item:first-child {
+	padding-left: 0;
+}
+
+td.robo-shelf-item:last-child {
+	padding-right: 0;
+}
+
+td.robo-shelf-item small.robo-shelf-item {
+	display: block;
+}
+
+button.robo-shelf-item {
+	display: inline-block;
+	background-color: #fff;
+	border: 1px solid #ddd;
+	padding: 10px 10px;
+	margin: 0;
+	font-size: 16px;
+	outline: none;
+	font-size: 0.95em;
+	color: #777;
+}
+
+input[type=number].robo-shelf-item {
+	height: 36px;
+	line-height: 36px;
+	border: 1px solid #ddd;
+	width: 50px;
+	text-align: right;
+}
+
+.price.robo-shelf-item {
+	text-align: right;
+	width: 100px;
+}
+
+.quantity.robo-shelf-item {
+	text-align: right;
+	width: 50px;
+}
+
+.action.robo-shelf-item {
+	text-align: right;
+	width: 150px;
+}
+
+core-icon.robo-shelf-item {
+	margin-left: 10px;
+	color: #aaa;
+	height: 20px !important;
+}
+
+.sku.robo-shelf-item, .shipping.robo-shelf-item {
+	display: none;
+}
+
+.sku[visible].robo-shelf-item, .shipping[visible].robo-shelf-item {
+	display: block;
+}
+</style>
+<style scope="robo-receipt">
+table.robo-receipt {
+	width: 100%;
+	border: none;
+	border-collapse: collapse;
+}
+
+table.robo-receipt thead.robo-receipt th.robo-receipt {
+	border-bottom: 1px solid #ddd;
+}
+
+table.robo-receipt tbody.robo-receipt td.robo-receipt {
+	border-bottom: 1px solid #f0f0f0;
+}
+
+table.robo-receipt tbody.robo-receipt tr.robo-receipt:last-child td.robo-receipt
+	{
+	border-bottom: none;
+}
+
+table.robo-receipt thead.robo-receipt th.robo-receipt {
+	font-weight: bold;
+	text-align: left;
+}
+
+table.robo-receipt thead.robo-receipt th.text-right.robo-receipt, table.robo-receipt tbody.robo-receipt td.text-right.robo-receipt
+	{
+	text-align: right;
+}
+</style>
+<style scope="robo-languages">
+.robo-languages-container.robo-languages {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 0;
+	text-transform: uppercase;
+	z-index: 100;
+	text-align: left;
+	margin-top: -400px;
+	z-index: 5;
+	background-color: #fff;
+	z-index: 10000;
+	min-height: 70px;
+	line-height: auto;
+	transition: .35s all ease;
+	box-shadow: 1px 2px 3px rgba(119, 119, 119, 0.25);
+}
+
+.robo-languages-container[visible].robo-languages {
+	margin-top: 0;
+}
+
+.robo-languages-container.robo-languages svg.robo-languages {
+	width: 25px;
+	height: 25px;
+	margin: 0;
+	padding: 0;
+	line-height: 25px;
+	display: inline-block;
+	vertical-align: middle;
+	fill: currentColor;
+}
+
+.robo-languages-container.robo-languages .close-languages.robo-languages
+	{
+	height: 40px;
+	width: 40px;
+	text-align: center;
+	color: #ccc;
+	position: absolute;
+	top: 15px;
+	right: 10px;
+	background: none;
+	border: none;
+	outline: none;
+	z-index: 10;
+}
+
+.languages-loading.robo-languages {
+	display: none;
+	color: #888;
+	vertical-align: top;
+	width: 25px;
+	height: 25px;
+	margin-top: 0;
+	margin-left: 5px;
+}
+
+.languages-loading[visible].robo-languages {
+	display: inline-block;
+}
+
+.languages-loading.robo-languages svg.robo-languages {
+	display: block;
+	vertical-align: top;
+	width: 25px;
+	height: 25px;
+	margin: 0;
+	padding: 0;
+	line-height: 25px;
+	display: inline-block;
+	vertical-align: middle;
+	text-align: center;
+	fill: currentColor;
+}
+
+.select-language.robo-languages {
+	display: inline-block;
+	padding-left: 15px;
+	height: 70px;
+	line-height: 70px;
+}
+
+.select-language.robo-languages label.robo-languages {
+	display: none;
+	margin-right: 5px;
+	height: 50px;
+	line-height: 50px;
+	font-size: 0.95em;
+}
+
+.select-language.robo-languages label.direction.robo-languages {
+	margin-left: 15px;
+}
+
+.select-language.robo-languages a[active].robo-languages {
+	background-color: #f0f0f0;
+}
+
+@media ( min-width : 600px) {
+	.select-language.robo-languages label.robo-languages {
+		display: inline-block;
+	}
+}
+</style>
+<style scope="robo-gallery">
+.gallery.robo-gallery {
+	margin-bottom: 25px;
+}
+
+.gallery.robo-gallery a.robo-gallery {
+	display: inline-block;
+	width: 200px;
+	height: 200px;
+	margin: 0 10px 10px 0;
+}
+
+.gallery.robo-gallery a.robo-gallery img.robo-gallery {
+	width: 200px;
+	height: 200px;
+}
+</style>
+<style scope="robo-share">
+.robo-share.robo-share {
+	margin-bottom: 25px;
+}
+
+.robo-share.robo-share span.robo-share {
+	display: none;
+	vertical-align: top;
+	margin-right: 10px;
+}
+
+.robo-share.robo-share span[visible].robo-share {
+	display: inline-block;
+}
+</style>
+<style scope="robo-badge">
+.robo-badge.robo-badge {
+	margin-bottom: 25px;
+}
+
+.robo-badge.robo-badge a.robo-badge {
+	display: none;
+	vertical-align: top;
+	margin-right: 10px;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	font-size: 20px;
+	text-align: center;
+	border: 1px solid #ddd;
+	border-radius: 50%;
+	color: #888;
+	background-color: #fff;
+}
+
+.robo-badge.robo-badge a[visible].robo-badge {
+	display: inline-block;
+}
+
+.robo-badge.colorful.robo-badge a.badge-facebook.robo-badge {
+	border: 1px solid #fff;
+	color: #fff;
+	background-color: #3b5998;
+}
+
+.robo-badge.colorful.robo-badge a.badge-twitter.robo-badge {
+	border: 1px solid #fff;
+	color: #fff;
+	background-color: #4099ff;
+}
+
+.robo-badge.colorful.robo-badge a.badge-github.robo-badge {
+	border: 1px solid #fff;
+	color: #fff;
+	background-color: #333;
+}
+
+.robo-badge.colorful.robo-badge a.badge-pinterest.robo-badge {
+	border: 1px solid #fff;
+	color: #fff;
+	background-color: #c92228;
+}
+
+.robo-badge.colorful.robo-badge a.badge-tumblr.robo-badge {
+	border: 1px solid #fff;
+	color: #fff;
+	background-color: #35465c;
+}
+
+.robo-badge.colorful.robo-badge a.badge-youtube.robo-badge {
+	border: 1px solid #fff;
+	color: #fff;
+	background-color: #dc2725;
+}
+
+.robo-badge.colorful.robo-badge a.badge-googleplus.robo-badge {
+	border: 1px solid #fff;
+	color: #fff;
+	background-color: #df4b38;
+}
+
+.robo-badge.colorful.robo-badge a.badge-linkedin.robo-badge {
+	border: 1px solid #fff;
+	color: #fff;
+	background-color: #0077b5;
+}
+
+.robo-badge.colorful.robo-badge a.badge-instagram.robo-badge {
+	border: 1px solid #fff;
+	color: #fff;
+	background-color: #2e5e86;
+}
+</style>
+<style scope="robo-comments">
+.robo-comments-container.robo-comments {
+	margin-bottom: 25px;
+}
+
+.robo-comments-container.robo-comments>div.robo-comments {
+	display: none;
+}
+
+.robo-comments-container.robo-comments>div[visible].robo-comments {
+	display: block;
+}
+</style>
+<style>
+body {
+	transition: opacity ease-in 0.2s;
+}
+
+body[unresolved] {
+	opacity: 0;
+	display: block;
+	overflow: hidden;
+	position: relative;
+}
+</style>
+
+<title>Blog</title>
+
+<!-- meta -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="description"
+	content="Your blog contains a list of your blog posts">
+<meta name="keywords" content="">
+
+<meta name="viewport"
+	content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+
+<!-- set base for HTML5 mode -->
+<!--<base href="">-->
+<base href=".">
+
+<!-- icons -->
+<link rel="icon" href="">
+<meta name="msapplication-TileColor" content="#FFFFFF">
+<meta name="msapplication-TileImage" content="">
+<meta name="theme-color" content="#FFFFFF">
+<link rel="apple-touch-icon" href="">
+
+<!-- font -->
+<link href="./Blog_files/css" rel="stylesheet" type="text/css">
+<link type="text/css" href="./Blog_files/font-awesome.css"
+	rel="stylesheet">
+
+<!-- css -->
+<link type="text/css" href="./Home_files/libs.min.css" rel="stylesheet">
+<link type="text/css" href="./Home_files/robo.min.css" rel="stylesheet">
+
+<!-- js -->
+<script id="facebook-jssdk" src="./Blog_files/sdk.js"></script>
+<script src="./Blog_files/js"></script>
+<style type="text/css"></style>
+<script src="./Blog_files/main.js"></script>
+<script src="./Blog_files/robo.site.js"></script>
+
+<!-- web components -->
+<script src="./Blog_files/webcomponents-lite.min.js"></script>
+
+<style type="text/css">
+.fb_hidden {
+	position: absolute;
+	top: -10000px;
+	z-index: 10001
+}
+
+.fb_reposition {
+	overflow-x: hidden;
+	position: relative
+}
+
+.fb_invisible {
+	display: none
+}
+
+.fb_reset {
+	background: none;
+	border: 0;
+	border-spacing: 0;
+	color: #000;
+	cursor: auto;
+	direction: ltr;
+	font-size: 11px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	letter-spacing: normal;
+	line-height: 1;
+	margin: 0;
+	overflow: visible;
+	padding: 0;
+	text-align: left;
+	text-decoration: none;
+	text-indent: 0;
+	text-shadow: none;
+	text-transform: none;
+	visibility: visible;
+	white-space: normal;
+	word-spacing: normal
+}
+
+.fb_reset>div {
+	overflow: hidden
+}
+
+.fb_link img {
+	border: none
+}
+
+.fb_dialog {
+	background: rgba(82, 82, 82, .7);
+	position: absolute;
+	top: -10000px;
+	z-index: 10001
+}
+
+.fb_reset .fb_dialog_legacy {
+	overflow: visible
+}
+
+.fb_dialog_advanced {
+	padding: 10px;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	border-radius: 8px
+}
+
+.fb_dialog_content {
+	background: #fff;
+	color: #333
+}
+
+.fb_dialog_close_icon {
+	background:
+		url(https://static.xx.fbcdn.net/rsrc.php/v2/yq/r/IE9JII6Z1Ys.png)
+		no-repeat scroll 0 0 transparent;
+	_background-image:
+		url(https://static.xx.fbcdn.net/rsrc.php/v2/yL/r/s816eWC-2sl.gif);
+	cursor: pointer;
+	display: block;
+	height: 15px;
+	position: absolute;
+	right: 18px;
+	top: 17px;
+	width: 15px
+}
+
+.fb_dialog_mobile .fb_dialog_close_icon {
+	top: 5px;
+	left: 5px;
+	right: auto
+}
+
+.fb_dialog_padding {
+	background-color: transparent;
+	position: absolute;
+	width: 1px;
+	z-index: -1
+}
+
+.fb_dialog_close_icon:hover {
+	background:
+		url(https://static.xx.fbcdn.net/rsrc.php/v2/yq/r/IE9JII6Z1Ys.png)
+		no-repeat scroll 0 -15px transparent;
+	_background-image:
+		url(https://static.xx.fbcdn.net/rsrc.php/v2/yL/r/s816eWC-2sl.gif)
+}
+
+.fb_dialog_close_icon:active {
+	background:
+		url(https://static.xx.fbcdn.net/rsrc.php/v2/yq/r/IE9JII6Z1Ys.png)
+		no-repeat scroll 0 -30px transparent;
+	_background-image:
+		url(https://static.xx.fbcdn.net/rsrc.php/v2/yL/r/s816eWC-2sl.gif)
+}
+
+.fb_dialog_loader {
+	background-color: #f6f7f8;
+	border: 1px solid #606060;
+	font-size: 24px;
+	padding: 20px
+}
+
+.fb_dialog_top_left, .fb_dialog_top_right, .fb_dialog_bottom_left,
+	.fb_dialog_bottom_right {
+	height: 10px;
+	width: 10px;
+	overflow: hidden;
+	position: absolute
+}
+
+.fb_dialog_top_left {
+	background:
+		url(https://static.xx.fbcdn.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png)
+		no-repeat 0 0;
+	left: -10px;
+	top: -10px
+}
+
+.fb_dialog_top_right {
+	background:
+		url(https://static.xx.fbcdn.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png)
+		no-repeat 0 -10px;
+	right: -10px;
+	top: -10px
+}
+
+.fb_dialog_bottom_left {
+	background:
+		url(https://static.xx.fbcdn.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png)
+		no-repeat 0 -20px;
+	bottom: -10px;
+	left: -10px
+}
+
+.fb_dialog_bottom_right {
+	background:
+		url(https://static.xx.fbcdn.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png)
+		no-repeat 0 -30px;
+	right: -10px;
+	bottom: -10px
+}
+
+.fb_dialog_vert_left, .fb_dialog_vert_right, .fb_dialog_horiz_top,
+	.fb_dialog_horiz_bottom {
+	position: absolute;
+	background: #525252;
+	filter: alpha(opacity = 70);
+	opacity: .7
+}
+
+.fb_dialog_vert_left, .fb_dialog_vert_right {
+	width: 10px;
+	height: 100%
+}
+
+.fb_dialog_vert_left {
+	margin-left: -10px
+}
+
+.fb_dialog_vert_right {
+	right: 0;
+	margin-right: -10px
+}
+
+.fb_dialog_horiz_top, .fb_dialog_horiz_bottom {
+	width: 100%;
+	height: 10px
+}
+
+.fb_dialog_horiz_top {
+	margin-top: -10px
+}
+
+.fb_dialog_horiz_bottom {
+	bottom: 0;
+	margin-bottom: -10px
+}
+
+.fb_dialog_iframe {
+	line-height: 0
+}
+
+.fb_dialog_content .dialog_title {
+	background: #6d84b4;
+	border: 1px solid #3a5795;
+	color: #fff;
+	font-size: 14px;
+	font-weight: bold;
+	margin: 0
+}
+
+.fb_dialog_content .dialog_title>span {
+	background:
+		url(https://static.xx.fbcdn.net/rsrc.php/v2/yd/r/Cou7n-nqK52.gif)
+		no-repeat 5px 50%;
+	float: left;
+	padding: 5px 0 7px 26px
+}
+
+body.fb_hidden {
+	-webkit-transform: none;
+	height: 100%;
+	margin: 0;
+	overflow: visible;
+	position: absolute;
+	top: -10000px;
+	left: 0;
+	width: 100%
+}
+
+.fb_dialog.fb_dialog_mobile.loading {
+	background:
+		url(https://static.xx.fbcdn.net/rsrc.php/v2/ya/r/3rhSv5V8j3o.gif)
+		white no-repeat 50% 50%;
+	min-height: 100%;
+	min-width: 100%;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	z-index: 10001
+}
+
+.fb_dialog.fb_dialog_mobile.loading.centered {
+	width: auto;
+	height: auto;
+	min-height: initial;
+	min-width: initial;
+	background: none
+}
+
+.fb_dialog.fb_dialog_mobile.loading.centered #fb_dialog_loader_spinner {
+	width: 100%
+}
+
+.fb_dialog.fb_dialog_mobile.loading.centered .fb_dialog_content {
+	background: none
+}
+
+.loading.centered #fb_dialog_loader_close {
+	color: #fff;
+	display: block;
+	padding-top: 20px;
+	clear: both;
+	font-size: 18px
+}
+
+#fb-root #fb_dialog_ipad_overlay {
+	background: rgba(0, 0, 0, .45);
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	min-height: 100%;
+	z-index: 10000
+}
+
+#fb-root #fb_dialog_ipad_overlay.hidden {
+	display: none
+}
+
+.fb_dialog.fb_dialog_mobile.loading iframe {
+	visibility: hidden
+}
+
+.fb_dialog_content .dialog_header {
+	-webkit-box-shadow: white 0 1px 1px -1px inset;
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#738ABA),
+		to(#2C4987));
+	border-bottom: 1px solid;
+	border-color: #1d4088;
+	color: #fff;
+	font: 14px Helvetica, sans-serif;
+	font-weight: bold;
+	text-overflow: ellipsis;
+	text-shadow: rgba(0, 30, 84, .296875) 0 -1px 0;
+	vertical-align: middle;
+	white-space: nowrap
+}
+
+.fb_dialog_content .dialog_header table {
+	-webkit-font-smoothing: subpixel-antialiased;
+	height: 43px;
+	width: 100%
+}
+
+.fb_dialog_content .dialog_header td.header_left {
+	font-size: 12px;
+	padding-left: 5px;
+	vertical-align: middle;
+	width: 60px
+}
+
+.fb_dialog_content .dialog_header td.header_right {
+	font-size: 12px;
+	padding-right: 5px;
+	vertical-align: middle;
+	width: 60px
+}
+
+.fb_dialog_content .touchable_button {
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#4966A6),
+		color-stop(.5, #355492), to(#2A4887));
+	border: 1px solid #2f477a;
+	-webkit-background-clip: padding-box;
+	-webkit-border-radius: 3px;
+	-webkit-box-shadow: rgba(0, 0, 0, .117188) 0 1px 1px inset,
+		rgba(255, 255, 255, .167969) 0 1px 0;
+	display: inline-block;
+	margin-top: 3px;
+	max-width: 85px;
+	line-height: 18px;
+	padding: 4px 12px;
+	position: relative
+}
+
+.fb_dialog_content .dialog_header .touchable_button input {
+	border: none;
+	background: none;
+	color: #fff;
+	font: 12px Helvetica, sans-serif;
+	font-weight: bold;
+	margin: 2px -12px;
+	padding: 2px 6px 3px 6px;
+	text-shadow: rgba(0, 30, 84, .296875) 0 -1px 0
+}
+
+.fb_dialog_content .dialog_header .header_center {
+	color: #fff;
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 18px;
+	text-align: center;
+	vertical-align: middle
+}
+
+.fb_dialog_content .dialog_content {
+	background:
+		url(https://static.xx.fbcdn.net/rsrc.php/v2/y9/r/jKEcVPZFk-2.gif)
+		no-repeat 50% 50%;
+	border: 1px solid #555;
+	border-bottom: 0;
+	border-top: 0;
+	height: 150px
+}
+
+.fb_dialog_content .dialog_footer {
+	background: #f6f7f8;
+	border: 1px solid #555;
+	border-top-color: #ccc;
+	height: 40px
+}
+
+#fb_dialog_loader_close {
+	float: left
+}
+
+.fb_dialog.fb_dialog_mobile .fb_dialog_close_button {
+	text-shadow: rgba(0, 30, 84, .296875) 0 -1px 0
+}
+
+.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon {
+	visibility: hidden
+}
+
+#fb_dialog_loader_spinner {
+	animation: rotateSpinner 1.2s linear infinite;
+	background-color: transparent;
+	background-image:
+		url(https://static.xx.fbcdn.net/rsrc.php/v2/yD/r/t-wz8gw1xG1.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	height: 24px;
+	width: 24px
+}
+
+@
+keyframes rotateSpinner { 0%{
+	transform: rotate(0deg)
+}
+
+100%{
+transform
+:rotate(360deg)
+}
+}
+.fb_iframe_widget {
+	display: inline-block;
+	position: relative
+}
+
+.fb_iframe_widget span {
+	display: inline-block;
+	position: relative;
+	text-align: justify
+}
+
+.fb_iframe_widget iframe {
+	position: absolute
+}
+
+.fb_iframe_widget_fluid_desktop, .fb_iframe_widget_fluid_desktop span,
+	.fb_iframe_widget_fluid_desktop iframe {
+	max-width: 100%
+}
+
+.fb_iframe_widget_fluid_desktop iframe {
+	min-width: 220px;
+	position: relative
+}
+
+.fb_iframe_widget_lift {
+	z-index: 1
+}
+
+.fb_hide_iframes iframe {
+	position: relative;
+	left: -10000px
+}
+
+.fb_iframe_widget_loader {
+	position: relative;
+	display: inline-block
+}
+
+.fb_iframe_widget_fluid {
+	display: inline
+}
+
+.fb_iframe_widget_fluid span {
+	width: 100%
+}
+
+.fb_iframe_widget_loader iframe {
+	min-height: 32px;
+	z-index: 2;
+	zoom: 1
+}
+
+.fb_iframe_widget_loader .FB_Loader {
+	background:
+		url(https://static.xx.fbcdn.net/rsrc.php/v2/y9/r/jKEcVPZFk-2.gif)
+		no-repeat;
+	height: 32px;
+	width: 32px;
+	margin-left: -16px;
+	position: absolute;
+	left: 50%;
+	z-index: 4
+}
+</style>
+<script type="text/javascript" charset="UTF-8"
+	src="./Blog_files/common.js"></script>
+<script type="text/javascript" charset="UTF-8"
+	src="./Blog_files/util.js"></script>
+<script type="text/javascript" charset="UTF-8"
+	src="./Blog_files/stats.js"></script>
+<script type="text/javascript" charset="UTF-8"
+	src="./Blog_files/AuthenticationService.Authenticate"></script>
+</head>
+
+<!-- entry point for site -->
+<body page="55ff2d16187e3" class="content">
+	<robo-languages>
+
+	<div class="robo-languages-container style-scope robo-languages">
+
+		<button class="close-languages style-scope robo-languages">
+			<svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet"
+				class="style-scope robo-languages">
+				<g class="style-scope robo-languages">
+				<path
+					d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+					class="style-scope robo-languages"></path></g></svg>
+		</button>
+
+		<div class="select-language style-scope robo-languages">
+			<label class="style-scope robo-languages">Language</label> <span
+				class="languages-loading style-scope robo-languages"> <svg
+					xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"
+					class="style-scope robo-languages">
+					<g class="style-scope robo-languages">
+					<path opacity=".25"
+						d="M16 0 A16 16 0 0 0 16 32 A16 16 0 0 0 16 0 M16 4 A12 12 0 0 1 16 28 A12 12 0 0 1 16 4"
+						class="style-scope robo-languages"></path>
+					<path d="M16 0 A16 16 0 0 1 32 16 L28 16 A12 12 0 0 0 16 4z"
+						class="style-scope robo-languages"
+						transform="rotate(304.204 16 16)">
+					<animatetransform attributeName="transform" type="rotate"
+						from="0 16 16" to="360 16 16" dur="0.8s" repeatCount="indefinite"
+						class="style-scope robo-languages"></animatetransform></path></g></svg>
 			</span>
-			
-			<form class="respond-search-form style-scope respond-search">
-		      <div class="search-container style-scope respond-search">
-		        <input id="searchText" type="text" autocomplete="off" class="style-scope respond-search">
-		        <button class="search style-scope respond-search"><svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" class="style-scope respond-search"><g class="style-scope respond-search"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z" class="style-scope respond-search"></path></g></svg></button>
-		      </div>  
-		    </form>  
-			  
-		  	<div class="respond-search-results style-scope respond-search">
-			  	
-		  		<ul class="style-scope respond-search">
-				
-				<template id="resultsList" is="dom-repeat" class="style-scope respond-search"></template> 
-				 	
-				  	<li class="no-results style-scope respond-search">No results found</li>
-			  	</ul>
-		  	</div>
+
+			<div class="btn-group style-scope robo-languages">
+				<button type="button"
+					class="btn btn-default dropdown-toggle style-scope robo-languages"
+					data-toggle="dropdown" aria-expanded="false">
+					<span class="style-scope robo-languages">English</span> <span
+						class="caret style-scope robo-languages"></span>
+				</button>
+				<ul class="dropdown-menu style-scope robo-languages" role="menu">
+					<template id="languagesList" is="dom-repeat"
+						class="style-scope robo-languages"></template>
+				</ul>
+			</div>
+
+			<label class="direction style-scope robo-languages">Direction</label>
+
+			<div class="btn-group style-scope robo-languages">
+				<button type="button"
+					class="btn btn-default dropdown-toggle style-scope robo-languages"
+					data-toggle="dropdown" aria-expanded="false">
+					<span class="style-scope robo-languages">ltr</span> <span
+						class="caret style-scope robo-languages"></span>
+				</button>
+				<ul class="dropdown-menu style-scope robo-languages" role="menu">
+					<li class="style-scope robo-languages"><a
+						class="style-scope robo-languages" active="">LTR</a></li>
+					<li class="style-scope robo-languages"><a
+						class="style-scope robo-languages">RTL</a></li>
+				</ul>
+			</div>
+
+
+
 		</div>
-	
-	</respond-search> 
 
-<header role="banner" style="width: 100%; position:fixed; top:0px;">
+	</div>
 
-	<nav class="navbar navbar-default" role="navigation">
+	</robo-languages>
+	<robo-cart count="0">
 
-	  <div class="navbar-header">
-	    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-	      <i class="fa fa-bars"></i>
-	    </button>
-        
-		<a class="navbar-brand" href="Home.html"><img src="./Home_files/mcs-header.jpg"></a>
+	<div class="robo-cart-container style-scope robo-cart">
 
-	  </div>
-	  <!-- /.navbar-header -->
-	
-	  <div class="collapse navbar-collapse navbar-ex1-collapse"> 
-        <ul class="nav navbar-nav navbar-right">
-        <li><a href="Home.html">Home</a></li>
-        <li class="active "><a href="Blog.html">Blog</a></li>
-        <li><a href="Resources.html">Resources</a></li>
-        <li><a href="About.html">About</a></li>
-        <li><a href="Sponsors.html">Sponsors</a></li>
-        <li><a href="Contact.html">Contact</a></li>
-        </ul>
-	  </div>
-	  <!-- /.navbar-collapse -->
-      
-	</nav>
+		<button class="close-cart style-scope robo-cart">
+			<svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet"
+				class="style-scope robo-cart">
+				<g class="style-scope robo-cart">
+				<path
+					d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+					class="style-scope robo-cart"></path></g></svg>
+		</button>
 
-</header>
+		<div class="cart-container style-scope robo-cart">
+
+			<table class="style-scope robo-cart">
+				<thead class="style-scope robo-cart">
+					<tr class="style-scope robo-cart">
+						<th class="style-scope robo-cart">Item</th>
+						<th class="number style-scope robo-cart">Quantity</th>
+						<th class="number style-scope robo-cart">Price</th>
+						<th class="number style-scope robo-cart">Total</th>
+					</tr>
+				</thead>
+				<tbody class="style-scope robo-cart">
+					<template id="cartList" is="dom-repeat"
+						class="style-scope robo-cart"></template>
+				</tbody>
+				<tfoot class="style-scope robo-cart">
+					<tr class="subtotal style-scope robo-cart">
+						<th colspan="3" class="style-scope robo-cart">Subtotal</th>
+						<td class="number style-scope robo-cart">$0.00 USD</td>
+					</tr>
+					<tr class="tax style-scope robo-cart">
+						<th colspan="3" class="style-scope robo-cart">Tax</th>
+						<td class="number style-scope robo-cart">$0.00 USD</td>
+					</tr>
+					<tr class="shipping style-scope robo-cart">
+						<th colspan="3" class="style-scope robo-cart">Shipping</th>
+						<td class="number style-scope robo-cart">$0.00 USD</td>
+					</tr>
+					<tr class="total style-scope robo-cart">
+						<th colspan="3" class="style-scope robo-cart">Total</th>
+						<td class="number style-scope robo-cart">$0.00 USD</td>
+					</tr>
+				</tfoot>
+			</table>
+
+		</div>
 
 
-	<div id="content" class="container" role="main" style="margin-top: 120px;">
-	
-	
+		<div class="checkout style-scope robo-cart">
+
+			<a class="clear-cart style-scope robo-cart">Clear Cart</a> <span
+				class="total style-scope robo-cart"> <span
+				class="style-scope robo-cart">Total</span> <span
+				class="style-scope robo-cart">$0.00 USD</span>
+			</span>
+
+			<button class="style-scope robo-cart">
+				<span class="style-scope robo-cart">Checkout with Paypal</span>
+			</button>
+		</div>
+
+	</div>
+
+	</robo-cart>
+	<robo-search>
+
+	<div class="robo-search-container style-scope robo-search" dir="ltr">
+
+		<button class="close-search style-scope robo-search">
+			<svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet"
+				class="style-scope robo-search">
+				<g class="style-scope robo-search">
+				<path
+					d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+					class="style-scope robo-search"></path></g></svg>
+		</button>
+
+		<span class="search-loading style-scope robo-search"
+			visible$="loading"> <svg xmlns="http://www.w3.org/2000/svg"
+				viewBox="0 0 32 32" class="style-scope robo-search">
+				<g class="style-scope robo-search">
+				<path opacity=".25"
+					d="M16 0 A16 16 0 0 0 16 32 A16 16 0 0 0 16 0 M16 4 A12 12 0 0 1 16 28 A12 12 0 0 1 16 4"
+					class="style-scope robo-search"></path>
+				<path d="M16 0 A16 16 0 0 1 32 16 L28 16 A12 12 0 0 0 16 4z"
+					class="style-scope robo-search" transform="rotate(304.204 16 16)">
+				<animatetransform attributeName="transform" type="rotate"
+					from="0 16 16" to="360 16 16" dur="0.8s" repeatCount="indefinite"
+					class="style-scope robo-search"></animatetransform></path></g></svg>
+		</span>
+
+		<form class="robo-search-form style-scope robo-search">
+			<div class="search-container style-scope robo-search">
+				<input id="searchText" type="text" autocomplete="off"
+					class="style-scope robo-search">
+				<button class="search style-scope robo-search">
+					<svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet"
+						class="style-scope robo-search">
+						<g class="style-scope robo-search">
+						<path
+							d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
+							class="style-scope robo-search"></path></g></svg>
+				</button>
+			</div>
+		</form>
+
+		<div class="robo-search-results style-scope robo-search">
+
+			<ul class="style-scope robo-search">
+
+				<template id="resultsList" is="dom-repeat"
+					class="style-scope robo-search"></template>
+
+				<li class="no-results style-scope robo-search">No results found</li>
+			</ul>
+		</div>
+	</div>
+
+	</robo-search>
+
+	<header role="banner" style="width: 100%; position: fixed; top: 0px;">
+
+		<nav class="navbar navbar-default" role="navigation">
+
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse"
+					data-target=".navbar-ex1-collapse">
+					<i class="fa fa-bars"></i>
+				</button>
+
+				<a class="navbar-brand" href="Home.html"><img
+					src="./Home_files/mcs-header.jpg"></a>
+
+			</div>
+			<!-- /.navbar-header -->
+
+			<div class="collapse navbar-collapse navbar-ex1-collapse">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="Home.html">Home</a></li>
+					<li class="active "><a href="Blog.html">Blog</a></li>
+					<li><a href="Resources.html">Resources</a></li>
+					<li><a href="About.html">About</a></li>
+					<li><a href="Sponsors.html">Sponsors</a></li>
+					<li><a href="Contact.html">Contact</a></li>
+				</ul>
+			</div>
+			<!-- /.navbar-collapse -->
+
+		</nav>
+
+	</header>
+
+
+	<div id="content" class="container" role="main"
+		style="margin-top: 120px;">
+
+
 		<div id="block-1" class="block row">
-		
-		
+
+
 			<div class="col col-md-12">
-			
-			
-				<respond-list id="list1" display="list-blog" type="post"
-					label="/post" length="250" pagesize="10" tag="" orderby="Created"
+
+
+				<robo-list id="list1" display="list-blog" type="post" label="/post"
+					length="250" pagesize="10" tag="" orderby="Created"
 					pageresults="false">
 
-				<div id="items" class="style-scope respond-list">
+				<div id="items" class="style-scope robo-list">
 
-					<respond-list-item display="list-blog" thumb=""
+					<robo-list-item display="list-blog" thumb=""
 						url="post/sample-blog-post" name="Sample Blog Post" callout=""
 						description="A sample blog post to get you started" photo=""
 						first="New" last="User" date="2015-09-20 22:03:02"
-						class="style-scope respond-list">
+						class="style-scope robo-list"> 
+						
+						
+						<!--------------------------------------------------------->
+					<!---------------- BEGIN NEW BLOG ENTRIES ----------------->
+					 <!--------------------------------------------------------->
 
-<!--------------------------------------------------------->
-<!---------------- BEGIN NEW BLOG ENTRIES ----------------->
-<!--------------------------------------------------------->
+					
 
-					<div class="blog-post style-scope respond-list-item">
-						<respond-content url="post/sample-blog-post" class="style-scope respond-list-item">
-						<div class="style-scope respond-list-item">
-							<div id="block-1" class="block row style-scope respond-list-item">
-								<div class="col col-md-12 style-scope respond-list-item">
-									<h1 id="h1-1" class="style-scope respond-list-item">Our First Meeting</h1>
-<p id="p-1" class="style-scope respond-list-item">On September 14, we had our first team meeting as the MCHS RoboLions!  And we talked about a lot of things.</p>
-<p id="p-1" class="style-scope respond-list-item">We discussed ways to be an effective team, including making S.M.A.R.T. goals (specific, measurable, attainable, relevant, time bound) and how to have effective communication.</p>
-<p id="p-1" class="style-scope respond-list-item">We also talked about the three kinds of brainstorming methods, including the Delphi Technique, the Nominal Group Technique, and Dialectical Inquiry.</p>
-<p id="p-1" class="style-scope respond-list-item">Finally, we listed the various roles each team member would fill, such as co-leader, driver, programmer, engineer, business/marketing leader, pit crew members, and design builder.</p>								
+
+
+
+					<div class="blog-post style-scope robo-list-item">
+						<robo-content url="post/sample-blog-post"
+							class="style-scope robo-list-item">
+						<div class="style-scope robo-list-item">
+							<div id="block-1" class="block row style-scope robo-list-item">
+								<div class="col col-md-12 style-scope robo-list-item">
+									<h1 id="h1-1" class="style-scope robo-list-item">Outreach
+										Event: TrunkFest!</h1>
+									<p id="p-1" class="style-scope robo-list-item">On
+										Wednesday, October 28, we took part in TrunkFest, an event
+										where kids go to people's trunks and get candy, all taking
+										place at First Baptist Church of Maryville. We dressed up and
+										decorated our trunk with a Wall-E theme.</p>
+									<p id="p-2" class="style-scope robo-list-item">
+										<img src="./Blog_files/Trunkfest2.jpeg" class="style-scope"
+											height="400" width="533">
+									</p>
+									<p id="p-3" class="style-scope robo-list-item">We gave
+										candy to over 2,000 kids in two hours. It was a blast!</p>
 								</div>
 							</div>
 						</div>
-						</respond-content>
-						
-						<respond-meta photo="" first="New" last="User"
-							date="2015-09-20 22:03:02"
-							class="style-scope respond-list-item">
-						<div class="respond-meta-container style-scope respond-meta">
-							<p class="style-scope respond-meta">Last modified by Mike – 2015-09-14</p>
+						</robo-content>
+
+						<robo-meta photo="" first="New" last="User"
+							date="2015-09-20 22:03:02" class="style-scope robo-list-item">
+						<div class="robo-meta-container style-scope robo-meta">
+							<p class="style-scope robo-meta">Last modified by Mike –
+								2015-10-30</p>
 						</div>
-						</respond-meta>
+						</robo-meta>
 					</div>
 
 
 
-<!--------------------------------------------------------->
-<!------------------ BLOG ENTRY DIVIDER ------------------->
-<hr/>
-<!--------------------------------------------------------->
-<!--------------------------------------------------------->
 
 
-					<div class="blog-post style-scope respond-list-item">
-						<respond-content url="post/sample-blog-post" class="style-scope respond-list-item">
-						<div class="style-scope respond-list-item">
-							<div id="block-1" class="block row style-scope respond-list-item">
-								<div class="col col-md-12 style-scope respond-list-item">
-									<h1 id="h1-1" class="style-scope respond-list-item">Mentoring Opportunity</h1>
-<p id="p-1" class="style-scope respond-list-item">On October 1, the MCHS RoboLions were thrilled to give a presentation to the MCS FLL Team, and we think they learned a lot.</p>
-<p id="p-2" class="style-scope respond-list-item">
-<img src="./Blog_files/Mentoring.jpeg" class="style-scope">
-</p>
-<p id="p-1" class="style-scope respond-list-item">We decided to talk about basic robot design principles like designing good drive trains.  We also listed the 3 basic ways to move a robot: tracks, wheels, or castor wheels.</p>
-<p id="p-1" class="style-scope respond-list-item">We explained that often a simple design is best, and just because it's cool doesn't mean it will work.  We also talked about the benefits of repeatability, especially in testing.</p>
-<p id="p-1" class="style-scope respond-list-item">They were very grateful, and we think we got them off to a good start.</p>
-								</div>
-							</div>
-						</div>
-						</respond-content>
-						
-						<respond-meta photo="" first="New" last="User"
-							date="2015-09-20 22:03:02"
-							class="style-scope respond-list-item">
-						<div class="respond-meta-container style-scope respond-meta">
-							<p class="style-scope respond-meta">Last modified by Mike – 2015-10-01</p>
-						</div>
-						</respond-meta>
-					</div>
+					<!---------------------------------------------------------> 
+					<!------------------ BLOG ENTRY DIVIDER ------------------->
+					<hr />
+					<!--------------------------------------------------------->
+					 <!--------------------------------------------------------->
 
 
 
-<!--------------------------------------------------------->
-<!------------------ BLOG ENTRY DIVIDER ------------------->
-<hr/>
-<!--------------------------------------------------------->
-<!--------------------------------------------------------->
+				<div class="blog-post style-scope robo-list-item">
+						<robo-content url="post/sample-blog-post"
+							class="style-scope robo-list-item">
+						<div class="style-scope robo-list-item">
+							<div id="block-1" class="block row style-scope robo-list-item">
+								<div class="col col-md-12 style-scope robo-list-item">
+									<h1 id="h1-1" class="style-scope robo-list-item">Qualifier
+										Dates</h1>
+									<p id="p-1" class="style-scope robo-list-item">We now have
+										qualifier dates!</p>
 
-
-					<div class="blog-post style-scope respond-list-item">
-						<respond-content url="post/sample-blog-post" class="style-scope respond-list-item">
-						<div class="style-scope respond-list-item">
-							<div id="block-1" class="block row style-scope respond-list-item">
-								<div class="col col-md-12 style-scope respond-list-item">
-									<h1 id="h1-1" class="style-scope respond-list-item">Qualifier Dates</h1>
-<p id="p-1" class="style-scope respond-list-item">We now have qualifier dates!</p>
-
-<p id="p-1" class="style-scope respond-list-item">
-	<ul>
-	  <li type="square">Sat Jan. 9  @ SLCC - Meramac, St. Louis, MO</li>
-	  <li type="square">Sat Jan. 30 @ SIUC, Carbondale, IL</li>
-	  <li type="square">Sat Feb. 6  @ Hope Academy, Decatur, IL</li>
-	  <li type="square">Sat Feb. 13 @ Ballwin, MO</li>
-	</ul>
-</p>
+									<p id="p-1" class="style-scope robo-list-item">
+									<ul>
+										<li type="square">Sat Jan. 9 @ SLCC - Meramac, St. Louis,
+											MO</li>
+										<li type="square">Sat Jan. 30 @ SIUC, Carbondale, IL</li>
+										<li type="square">Sat Feb. 6 @ Hope Academy, Decatur, IL</li>
+										<li type="square">Sat Feb. 13 @ Ballwin, MO</li>
+									</ul>
+									</p>
 
 								</div>
 							</div>
 						</div>
-						</respond-content>
-						
-						<respond-meta photo="" first="New" last="User"
-							date="2015-09-20 22:03:02"
-							class="style-scope respond-list-item">
-						<div class="respond-meta-container style-scope respond-meta">
-							<p class="style-scope respond-meta">Last modified by Mike – 2015-10-16</p>
+						</robo-content>
+
+						<robo-meta photo="" first="New" last="User"
+							date="2015-09-20 22:03:02" class="style-scope robo-list-item">
+						<div class="robo-meta-container style-scope robo-meta">
+							<p class="style-scope robo-meta">Last modified by Mike –
+								2015-10-16</p>
 						</div>
-						</respond-meta>
+						</robo-meta>
 					</div>
 
 
 
-<!--------------------------------------------------------->
-<!---------------- END NEW BLOG ENTRIES ------------------->
-<!--------------------------------------------------------->
 
 
+					<!---------------------------------------------------------> 
+					<!------------------ BLOG ENTRY DIVIDER ------------------->
+					<hr />
+					<!---------------------------------------------------------> 
+					<!--------------------------------------------------------->
 
 
-					<div class="blog-post style-scope respond-list-item">
-						<respond-content url="post/sample-blog-post" class="style-scope respond-list-item">
-						<div class="style-scope respond-list-item">
-							<div id="block-1" class="block row style-scope respond-list-item">
-								<div class="col col-md-12 style-scope respond-list-item">
-									<h1 id="h1-1" class="style-scope respond-list-item">Outreach Event: TrunkFest!</h1>
-<p id="p-1" class="style-scope respond-list-item">On Wednesday, October 28, we took part in TrunkFest, an event where kids go to people's trunks and get candy, all taking place at First Baptist Church of Maryville. We dressed up and decorated our trunk with a Wall-E theme.</p>
-<p id="p-2" class="style-scope respond-list-item">
-<img src="./Blog_files/Trunkfest2.jpeg" class="style-scope" height="400" width="533">
-</p>
-<p id="p-3" class="style-scope respond-list-item">We gave candy to over 2,000 kids in two hours.  It was a blast!</p>
+					<div class="blog-post style-scope robo-list-item">
+						<robo-content url="post/sample-blog-post"
+							class="style-scope robo-list-item">
+						<div class="style-scope robo-list-item">
+							<div id="block-1" class="block row style-scope robo-list-item">
+								<div class="col col-md-12 style-scope robo-list-item">
+									<h1 id="h1-1" class="style-scope robo-list-item">Mentoring
+										Opportunity</h1>
+									<p id="p-1" class="style-scope robo-list-item">On October
+										1, the MCHS RoboLions were thrilled to give a presentation to
+										the MCS FLL Team, and we think they learned a lot.</p>
+									<p id="p-2" class="style-scope robo-list-item">
+										<img src="./Blog_files/Mentoring.jpeg" class="style-scope">
+									</p>
+									<p id="p-1" class="style-scope robo-list-item">We decided
+										to talk about basic robot design principles like designing
+										good drive trains. We also listed the 3 basic ways to move a
+										robot: tracks, wheels, or castor wheels.</p>
+									<p id="p-1" class="style-scope robo-list-item">We explained
+										that often a simple design is best, and just because it's cool
+										doesn't mean it will work. We also talked about the benefits
+										of repeatability, especially in testing.</p>
+									<p id="p-1" class="style-scope robo-list-item">They were
+										very grateful, and we think we got them off to a good start.</p>
 								</div>
 							</div>
 						</div>
-						</respond-content>
-						
-						<respond-meta photo="" first="New" last="User"
-							date="2015-09-20 22:03:02"
-							class="style-scope respond-list-item">
-						<div class="respond-meta-container style-scope respond-meta">
-							<p class="style-scope respond-meta">Last modified by Mike – 2015-10-30</p>
+						</robo-content>
+
+						<robo-meta photo="" first="New" last="User"
+							date="2015-09-20 22:03:02" class="style-scope robo-list-item">
+						<div class="robo-meta-container style-scope robo-meta">
+							<p class="style-scope robo-meta">Last modified by Mike –
+								2015-10-01</p>
 						</div>
-						</respond-meta>
+						</robo-meta>
 					</div>
 
 
 
-<!--------------------------------------------------------->
-<!---------------- END NEW BLOG ENTRIES ------------------->
-<!--------------------------------------------------------->
+					<!---------------------------------------------------------> 
+					<!------------------ BLOG ENTRY DIVIDER ------------------->
+					<hr />
+					<!--------------------------------------------------------->
+					 <!--------------------------------------------------------->
 
 
-					</respond-list-item>
+
+					<div class="blog-post style-scope robo-list-item">
+						<robo-content url="post/sample-blog-post"
+							class="style-scope robo-list-item">
+						<div class="style-scope robo-list-item">
+							<div id="block-1" class="block row style-scope robo-list-item">
+								<div class="col col-md-12 style-scope robo-list-item">
+									<h1 id="h1-1" class="style-scope robo-list-item">Our First
+										Meeting</h1>
+									<p id="p-1" class="style-scope robo-list-item">On September
+										14, we had our first team meeting as the MCHS RoboLions! And
+										we talked about a lot of things.</p>
+									<p id="p-1" class="style-scope robo-list-item">We discussed
+										ways to be an effective team, including making S.M.A.R.T.
+										goals (specific, measurable, attainable, relevant, time bound)
+										and how to have effective communication.</p>
+									<p id="p-1" class="style-scope robo-list-item">We also
+										talked about the three kinds of brainstorming methods,
+										including the Delphi Technique, the Nominal Group Technique,
+										and Dialectical Inquiry.</p>
+									<p id="p-1" class="style-scope robo-list-item">Finally, we
+										listed the various roles each team member would fill, such as
+										co-leader, driver, programmer, engineer, business/marketing
+										leader, pit crew members, and design builder.</p>
+								</div>
+							</div>
+						</div>
+						</robo-content>
+
+						<robo-meta photo="" first="New" last="User"
+							date="2015-09-20 22:03:02" class="style-scope robo-list-item">
+						<div class="robo-meta-container style-scope robo-meta">
+							<p class="style-scope robo-meta">Last modified by Mike –
+								2015-09-14</p>
+						</div>
+						</robo-meta>
+					</div>
+					
+
+
+					<!---------------------------------------------------------> 
+					<!---------------- END NEW BLOG ENTRIES ------------------->
+					<!--------------------------------------------------------->
+					 </robo-list-item>
 
 				</div>
 
 
-				<div id="actions" class="list-actions style-scope respond-list">
+				<div id="actions" class="list-actions style-scope robo-list">
 
-					<span class="pager style-scope respond-list"> <a
-						class="style-scope respond-list" active="">1</a> <template
-							id="pager" is="dom-repeat" class="style-scope respond-list"></template>
+					<span class="pager style-scope robo-list"> <a
+						class="style-scope robo-list" active="">1</a> <template id="pager"
+							is="dom-repeat" class="style-scope robo-list"></template>
 					</span>
 
 					<button title="$=&quot;{{label.previous}}&quot;"
-						class="style-scope respond-list">
+						class="style-scope robo-list">
 						<svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet"
-							class="style-scope respond-list">
-							<g class="style-scope respond-list">
+							class="style-scope robo-list">
+							<g class="style-scope robo-list">
 							<path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"
-								class="style-scope respond-list"></path></g></svg>
+								class="style-scope robo-list"></path></g></svg>
 					</button>
 
 					<button title="$=&quot;{{label.next}}&quot;"
-						class="style-scope respond-list">
+						class="style-scope robo-list">
 						<svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet"
-							class="style-scope respond-list">
-							<g class="style-scope respond-list">
+							class="style-scope robo-list">
+							<g class="style-scope robo-list">
 							<path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
-								class="style-scope respond-list"></path></g></svg>
+								class="style-scope robo-list"></path></g></svg>
 					</button>
 
 				</div>
 
 
-				</respond-list>
+				</robo-list>
 			</div>
 		</div>
 
@@ -1756,7 +2457,7 @@ body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relati
 
 	<footer role="contentinfo">
 		<div class="container">
-			<respond-content url="component/footer" render="publish">
+			<robo-content url="component/footer" render="publish">
 			<div>
 				<div id="footer-block-1" class="block row" data-nested="not-nested"
 					data-containerid="" data-containercssclass="">
@@ -1768,33 +2469,70 @@ body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relati
 					</div>
 					<div class="col col-md-4" style="text-align: center;">
 						<p id="footer-p-2" style="padding-top: 40px;">
-							<a href="http://www.usfirst.org/"><img src="./Home_files/FTC_FIRSTblue_RGB.jpg"></a>
+							<a href="http://www.usfirst.org/"><img
+								src="./Home_files/FTC_FIRSTblue_RGB.jpg"></a>
 						</p>
 					</div>
 					<div class="col col-md-4" style="text-align: center;">
 						<p id="footer-p-2" style="padding-top: 40px;">
-							<a href="https://www.facebook.com/MCHSrobolions"><img src="./Home_files/FB-f-Logo__blue_50.png"></a>
-							
-							<style>.ig-b- { display: inline-block; }
-							.ig-b- img { visibility: hidden; }
-							.ig-b-:hover { background-position: 0 -60px; } .ig-b-:active { background-position: 0 -120px; }
-							.ig-b-48 { width: 48px; height: 48px; background: url(//badges.instagram.com/static/images/ig-badge-sprite-48.png) no-repeat 0 0; }
-							@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-							.ig-b-48 { background-image: url(//badges.instagram.com/static/images/ig-badge-sprite-48@2x.png); background-size: 60px 178px; } }</style>
-							<a href="http://instagram.com/mchsrobolions?ref=badge" class="ig-b- ig-b-48"><img src="//badges.instagram.com/static/images/ig-badge-48.png" alt="Instagram" /></a>
-							
-							<br><br>
-							
+							<a href="https://www.facebook.com/MCHSrobolions"><img
+								src="./Home_files/FB-f-Logo__blue_50.png"></a>
+
+							<style>
+.ig-b- {
+	display: inline-block;
+}
+
+.ig-b- img {
+	visibility: hidden;
+}
+
+.ig-b-:hover {
+	background-position: 0 -60px;
+}
+
+.ig-b-:active {
+	background-position: 0 -120px;
+}
+
+.ig-b-48 {
+	width: 48px;
+	height: 48px;
+	background:
+		url(//badges.instagram.com/static/images/ig-badge-sprite-48.png)
+		no-repeat 0 0;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) , only screen and
+		(min--moz-device-pixel-ratio: 2) , only screen and
+		(-o-min-device-pixel-ratio: 2 / 1) , only screen and
+		(min-device-pixel-ratio: 2) , only screen and (min-resolution: 192dpi)
+		, only screen and (min-resolution: 2dppx) {
+	.ig-b-48 {
+		background-image:
+			url(//badges.instagram.com/static/images/ig-badge-sprite-48@2x.png);
+		background-size: 60px 178px;
+	}
+}
+</style>
+							<a href="http://instagram.com/mchsrobolions?ref=badge"
+								class="ig-b- ig-b-48"><img
+								src="//badges.instagram.com/static/images/ig-badge-48.png"
+								alt="Instagram" /></a> <br>
+							<br>
+
 							<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-							<a href="https://twitter.com/mchsrobolions" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @mchsrobolions</a>
-							
+							<a href="https://twitter.com/mchsrobolions"
+								class="twitter-follow-button" data-show-count="false"
+								data-size="large">Follow @mchsrobolions</a>
+
 						</p>
 					</div>
 				</div>
 				<div id="footer-block-2" class="block row" data-nested="not-nested"
 					data-containerid="" data-containercssclass="">
 					<div class="col col-md-12">
-						<respond-menu id="menu-1" type="footer">
+						<robo-menu id="menu-1" type="footer">
 
 						<ul id="undefined" class="undefined">
 							<li><a href="Home.html">Home</a></li>
@@ -1805,16 +2543,34 @@ body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relati
 							<li><a href="Contact.html">Contact</a></li>
 						</ul>
 
-						</respond-menu>
+						</robo-menu>
 					</div>
 				</div>
 			</div>
-			</respond-content>
+			</robo-content>
 		</div>
 		<!-- /.container -->
 	</footer>
 
 
 
-<!-- jquery and bootstrap -->
-<script src="./Blog_files/libs.min.js"></script><div id="fb-root" class=" fb_reset"><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div></div></div><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div><iframe name="fb_xdm_frame_https" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" title="Facebook Cross Domain Communication Frame" aria-hidden="true" tabindex="-1" id="fb_xdm_frame_https" src="./Blog_files/44OwK74u0Ie.html" style="border: none;"></iframe></div></div></div></body></html>
+	<!-- jquery and bootstrap -->
+	<script src="./Blog_files/libs.min.js"></script>
+	<div id="fb-root" class=" fb_reset">
+		<div
+			style="position: absolute; top: -10000px; height: 0px; width: 0px;">
+			<div></div>
+		</div>
+		<div
+			style="position: absolute; top: -10000px; height: 0px; width: 0px;">
+			<div>
+				<iframe name="fb_xdm_frame_https" frameborder="0"
+					allowtransparency="true" allowfullscreen="true" scrolling="no"
+					title="Facebook Cross Domain Communication Frame"
+					aria-hidden="true" tabindex="-1" id="fb_xdm_frame_https"
+					src="./Blog_files/44OwK74u0Ie.html" style="border: none;"></iframe>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

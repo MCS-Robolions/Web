@@ -1,39 +1,39 @@
-var respond = respond || {};
+var robo = robo || {};
 
-respond.site = {
+robo.site = {
 	
 	// site settings
-	settings: {"SiteId":"55ff2d15f12c1","Domain":"https:\/\/demo.respondcms.com\/sites\/robots","API":"https:\/\/demo.respondcms.com\/api","Name":"Robots","ImagesUrl":"https:\/\/demo.respondcms.com\/sites\/robots\/","LogoUrl":"files\/sample-logo.png","AltLogoUrl":"","PayPalLogoUrl":"","IconUrl":"","IconBg":"#FFFFFF","Theme":"energy","PrimaryEmail":"beckettmj@gmail.com","Language":"en","Direction":"ltr","ShowCart":false,"ShowSettings":false,"ShowLanguages":false,"ShowLogin":false,"ShowSearch":true,"Currency":"USD","WeightUnit":"kgs","ShippingCalculation":"free","ShippingRate":"0.00","ShippingTiers":null,"TaxRate":"0.00000","PayPalId":"","PayPalUseSandbox":"0","FormPublicId":""},
+	settings: {"SiteId":"55ff2d15f12c1","Domain":"https:\/\/demo.robocms.com\/sites\/robots","API":"https:\/\/demo.robocms.com\/api","Name":"Robots","ImagesUrl":"https:\/\/demo.robocms.com\/sites\/robots\/","LogoUrl":"files\/sample-logo.png","AltLogoUrl":"","PayPalLogoUrl":"","IconUrl":"","IconBg":"#FFFFFF","Theme":"energy","PrimaryEmail":"beckettmj@gmail.com","Language":"en","Direction":"ltr","ShowCart":false,"ShowSettings":false,"ShowLanguages":false,"ShowLogin":false,"ShowSearch":true,"Currency":"USD","WeightUnit":"kgs","ShippingCalculation":"free","ShippingRate":"0.00","ShippingTiers":null,"TaxRate":"0.00000","PayPalId":"","PayPalUseSandbox":"0","FormPublicId":""},
 	
 	// options
 	options: null,
 
-	// init respond.site
+	// init robo.site
 	init:function(){
 		
-		var language = respond.site.getLanguage();
+		var language = robo.site.getLanguage();
 		
 		// set direction
-		if(sessionStorage['respond-direction'] != null){
+		if(sessionStorage['robo-direction'] != null){
 			
-			var direction = sessionStorage['respond-direction'];
+			var direction = sessionStorage['robo-direction'];
 			
 			// translate if the set language is not the default
-			if(direction != respond.site.settings.Direction){
+			if(direction != robo.site.settings.Direction){
 				// set language in html
 				document.querySelector('html').setAttribute('dir', direction);
 			}
 			
 		}
 		else{
-			sessionStorage['respond-direction'] = respond.site.settings.Direction;
+			sessionStorage['robo-direction'] = robo.site.settings.Direction;
 		}
 		
 		// setup prettyprint
 		prettyPrint();
 		
 		// setup lightbox
-		respond.site.setupLightbox(document);
+		robo.site.setupLightbox(document);
 		
 		// load Facebook API
 		var fbroot = document.createElement('div');
@@ -80,7 +80,7 @@ respond.site = {
 			}
 			
 			// translate
-			var html = respond.site.i18n(id);
+			var html = robo.site.i18n(id);
 			
 			els[x].innerHTML = html;
 		}
@@ -91,16 +91,16 @@ respond.site = {
 	i18n:function(text){
 		
 		// setup i18next (if not setup)
-		if(respond.site.options == null){
+		if(robo.site.options == null){
 			
-			var language = respond.site.settings.Language
+			var language = robo.site.settings.Language
 			
-			if(sessionStorage['respond-language'] != null){
-				language = sessionStorage['respond-language'];
+			if(sessionStorage['robo-language'] != null){
+				language = sessionStorage['robo-language'];
 			}
 			
 			// set language
-			respond.site.options = {
+			robo.site.options = {
 		        lng: language,
 		        getAsync : false,
 		        useCookie: false,
@@ -110,7 +110,7 @@ respond.site = {
 		        defaultLoadingValue: ''
 		    };
 		
-			i18n.init(respond.site.options);
+			i18n.init(robo.site.options);
 			
 		}
 		
@@ -121,15 +121,15 @@ respond.site = {
 	setLanguage:function(language){
 		
 		i18n.setLng(language, function(t) { /* loading done */ 
-			sessionStorage['respond-language'] = language;
-			respond.site.translate(language);
+			sessionStorage['robo-language'] = language;
+			robo.site.translate(language);
 		});
 	},
 	
 	// set current direction
 	setDirection:function(direction){
 		
-		sessionStorage['respond-direction'] = direction;
+		sessionStorage['robo-direction'] = direction;
 		
 	},
 	
@@ -162,7 +162,7 @@ respond.site = {
 	// sets up the lightbox for a given node
 	setupLightbox:function(node){
 		
-		var els = $(node).find('[respond-lightbox]');
+		var els = $(node).find('[robo-lightbox]');
 		
 		// walk through elements
 		for(x=0; x<els.length; x++){
@@ -188,7 +188,7 @@ respond.site = {
 		
 		// setup lightbox
 		if(jQuery().magnificPopup){
-			$('[respond-gallery]').magnificPopup({ 
+			$('[robo-gallery]').magnificPopup({ 
 			  type: 'image',
 			  gallery:{
 				  enabled: true
@@ -201,21 +201,21 @@ respond.site = {
 	// get language
 	getLanguage: function(){
 		
-		var language = respond.site.settings.Language;
+		var language = robo.site.settings.Language;
 		
 		// translate if needed
-		if(sessionStorage['respond-language'] != null){
+		if(sessionStorage['robo-language'] != null){
 			
-			var language = sessionStorage['respond-language'];
+			var language = sessionStorage['robo-language'];
 			
 			// translate if the set language is not the default
-			if(language != respond.site.settings.Language){
-				respond.site.translate(language);
+			if(language != robo.site.settings.Language){
+				robo.site.translate(language);
 			}
 			
 		}
 		else{
-			sessionStorage['respond-language'] = respond.site.settings.Language;
+			sessionStorage['robo-language'] = robo.site.settings.Language;
 		}
 		
 		return language;
@@ -225,7 +225,7 @@ respond.site = {
 
 // fire init
 document.addEventListener("DOMContentLoaded", function(event) { 
-  respond.site.init();
+  robo.site.init();
 });
 
 
