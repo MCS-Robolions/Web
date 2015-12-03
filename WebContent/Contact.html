@@ -2179,8 +2179,15 @@ transform
 					<i class="fa fa-bars"></i>
 				</button>
 
-				<a class="navbar-brand" href="Home.html"><img
-					src="./Home_files/mcs-header.jpg"></a>
+				<a class="navbar-brand" href="Home.html"><img src="./Home_files/mcs-header.jpg"></a>
+
+				<div style="position: relative; width: 0; height: 0">
+				    <div style="position: absolute; left: 150px; top: 10px; width: 200px; font-size: small; font-style: italic;">
+						Each of you should use whatever gift you have received to serve others,
+						as faithful stewards of God’s grace in its various forms.<br>
+						-- 1 Peter 4:10 NIV    
+				    </div>
+				</div>
 
 			</div>
 			<!-- /.navbar-header -->
@@ -2215,7 +2222,7 @@ transform
 				<robo-form formid="contactForm">
 
 				<div id="container" class="style-scope robo-form">
-					<form class="style-scope robo-form" id="contactForm">
+					<form class="style-scope robo-form" id="contactForm" action="Mail.jsp" method="post" onSubmit="return validForm()">
 
 						<robo-form-field fieldid="firstName" type="text"
 							label="* First Name" required="true" cssclass="form-control">
@@ -2227,6 +2234,7 @@ transform
 								placeholder="" required="">
 						</div>
 						</robo-form-field>
+						
 						<robo-form-field fieldid="lastName" type="text"
 							label="* Last Name" required="true">
 						<div data-id="lastName" data-label="* Last Name" data-type="text"
@@ -2237,6 +2245,7 @@ transform
 								placeholder="" required="">
 						</div>
 						</robo-form-field>
+						
 						<robo-form-field fieldid="email" type="text" label="* Email"
 							required="true">
 						<div data-id="email" data-label="* Email" data-type="text"
@@ -2247,36 +2256,7 @@ transform
 								placeholder="" required="">
 						</div>
 						</robo-form-field>
-
-						<!-- 						<robo-form-field fieldid="phone" type="text" label="Phone" -->
-						<!-- 							required="false"> -->
-						<!-- 						<div data-id="phone" data-label="Phone" data-type="text" -->
-						<!-- 							data-required="false" class="form-group"> -->
-						<!-- 							<label for="phone" id="phone-label" class="control-label" -->
-						<!-- 								data-i18n="55ff2d162125a.phone-label">Phone</label><input -->
-						<!-- 								id="phone" name="phone" type="text" class="form-control" -->
-						<!-- 								placeholder=""> -->
-						<!-- 						</div> -->
-						<!-- 						</robo-form-field> -->
-
-						<!-- 						<robo-form-field fieldid="preferredContact" type="radiolist" -->
-						<!-- 							label="Preferred Contact" required="false" options="Email, Phone"> -->
-						<!-- 						<div data-id="preferredContact" data-label="Preferred Contact" -->
-						<!-- 							data-type="radiolist" data-required="false" class="form-group"> -->
-						<!-- 							<label for="preferredContact" id="preferredContact-label" -->
-						<!-- 								class="control-label" -->
-						<!-- 								data-i18n="55ff2d162125a.preferredContact-label">Preferred -->
-						<!-- 								Contact</label><span class="radio list"><label class="radio"><input -->
-						<!-- 									name="preferredContact" type="radio" value="Email"><span -->
-						<!-- 									id="preferredContact-radio1" -->
-						<!-- 									data-i18n="55ff2d162125a.preferredContact-radio1">Email</span></label><label -->
-						<!-- 								class="radio"><input name="preferredContact" -->
-						<!-- 									type="radio" value="Phone"><span -->
-						<!-- 									id="preferredContact-radio2" -->
-						<!-- 									data-i18n="55ff2d162125a.preferredContact-radio2">Phone</span></label></span> -->
-						<!-- 						</div> -->
-						<!-- 						</robo-form-field> -->
-
+					
 						<robo-form-field fieldid="additionalInformation" type="textarea"
 							label="Additional Information" required="false">
 						<div data-id="additionalInformation"
@@ -2291,11 +2271,12 @@ transform
 						</div>
 						</robo-form-field>
 
+						<input type="submit" class="btn btn-primary style-scope robo-form" />
+
 					</form>
 				</div>
 
-				<button type="button" class="btn btn-primary style-scope robo-form"
-					onclick="send()">Submit</button>
+				
 
 				<br />
 				<br />
